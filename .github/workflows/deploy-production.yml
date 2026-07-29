@@ -1,0 +1,93 @@
+name: Deploy production
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sslping-marketing-production
+  cancel-in-progress: false
+
+env:
+  CLUSTER_ID: 42c71c20-f7ee-4e76-b31b-3973adfebcf3
+  CLUSTER_NAME: mitrohin-cluster
+  REGISTRY_NAME: mitrohin-registry
+  IMAGE_NAME: sslping-marketing-site
+
+jobs:
+  test-build-deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    environment: production
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b # v4.0.3
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install, check and test
+        env:
+          VITE_DASHBOARD_URL: https://dashboard.sslping.io
+        run: |
+          set -euo pipefail
+          npm ci
+          npm run check
+          npm run build
+          npm test
+
+      - name: Install doctl
+        uses: digitalocean/action-doctl@3cb3953159719656269e044e0e24ca16dd2a690f # v2.5.2
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+
+      - name: Verify DigitalOcean production identity
+        run: |
+          set -euo pipefail
+          actual_cluster_id="$(doctl kubernetes cluster get "${CLUSTER_ID}" --format ID --no-header | xargs)"
+          actual_cluster_name="$(doctl kubernetes cluster get "${CLUSTER_ID}" --format Name --no-header | xargs)"
+          actual_registry_name="$(doctl registry get --format Name --no-header | xargs)"
+          test "${actual_cluster_id}" = "${CLUSTER_ID}"
+          test "${actual_cluster_name}" = "${CLUSTER_NAME}"
+          test "${actual_registry_name}" = "${REGISTRY_NAME}"
+
+      - name: Build and push image
+        env:
+          IMAGE: registry.digitalocean.com/${{ env.REGISTRY_NAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+        run: |
+          set -euo pipefail
+          doctl registry login --expiry-seconds 1200
+          docker build --pull --platform linux/amd64 \
+            --build-arg VITE_DASHBOARD_URL=https://dashboard.sslping.io \
+            --tag "${IMAGE}" \
+            --tag "registry.digitalocean.com/${REGISTRY_NAME}/${IMAGE_NAME}:latest" .
+          docker push "${IMAGE}"
+          docker push "registry.digitalocean.com/${REGISTRY_NAME}/${IMAGE_NAME}:latest"
+
+          deploy_image="$(docker inspect --format='{{index .RepoDigests 0}}' "${IMAGE}")"
+          case "${deploy_image}" in
+            "registry.digitalocean.com/${REGISTRY_NAME}/${IMAGE_NAME}@sha256:"*) ;;
+            *) echo "Unexpected pushed image digest: ${deploy_image}" >&2; exit 1 ;;
+          esac
+          printf 'DEPLOY_IMAGE=%s\n' "${deploy_image}" >> "${GITHUB_ENV}"
+
+      - name: Deploy marketing site
+        run: |
+          set -euo pipefail
+          test -n "${DEPLOY_IMAGE:-}"
+          doctl kubernetes cluster kubeconfig save "${CLUSTER_ID}" --expiry-seconds 1200
+          kubectl get nodes
+          kubectl get namespace sslping
+          sed "s|IMAGE_PLACEHOLDER|${DEPLOY_IMAGE}|g" deploy/kubernetes/marketing-site.yaml | kubectl apply -f -
+          kubectl -n sslping rollout status deployment/sslping-marketing-site --timeout=5m
+          kubectl -n sslping get deployment/sslping-marketing-site service/sslping-marketing-site httproute/sslping-marketing-site httproute/sslping-marketing-www-redirect

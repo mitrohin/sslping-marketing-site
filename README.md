@@ -25,7 +25,8 @@ cp .env.example .env.local
 VITE_DASHBOARD_URL=http://127.0.0.1:5173
 ```
 
-If `VITE_DASHBOARD_URL` is unset, the same local URL is used automatically.
+If `VITE_DASHBOARD_URL` is unset, development uses the local dashboard and a
+production build uses `https://dashboard.sslping.io`.
 
 ## Local development
 
@@ -40,8 +41,13 @@ The development server uses `http://127.0.0.1:4175`.
 
 ```sh
 npm run check
-npm run build
+VITE_DASHBOARD_URL=https://dashboard.sslping.io npm run build
+npm test
 npm run preview
 ```
+
+The production container, restricted Kubernetes workload, HTTPS routes for
+`sslping.io` and `www.sslping.io`, and GitHub Actions deployment are under
+`Dockerfile`, `deploy/`, and `.github/workflows/deploy-production.yml`.
 
 No analytics or marketing vendor is loaded by this prototype. Consent choices are stored locally so future integrations can be gated behind the selected categories.

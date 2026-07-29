@@ -10,7 +10,10 @@ import {
 
 const CONSENT_KEY = 'sslping-consent-v1'
 const CONSENT_VERSION = '2026-07-25'
-const DASHBOARD_BASE_URL = (import.meta.env.VITE_DASHBOARD_URL?.trim() || 'http://127.0.0.1:5173').replace(/\/+$/, '')
+const DASHBOARD_BASE_URL = (
+  import.meta.env.VITE_DASHBOARD_URL?.trim()
+  || (import.meta.env.DEV ? 'http://127.0.0.1:5173' : 'https://dashboard.sslping.io')
+).replace(/\/+$/, '')
 const DASHBOARD_LOGIN_URL = `${DASHBOARD_BASE_URL}/login`
 const DASHBOARD_REGISTER_URL = `${DASHBOARD_BASE_URL}/register`
 
@@ -211,7 +214,7 @@ function ProductPreview({ copy }: { copy: Copy['hero']['preview'] }) {
         <div className="preview-topline">
           <div>
             <span className="preview-kicker">{copy.endpoint}</span>
-            <strong>app.sslping.io</strong>
+            <strong>dashboard.sslping.io</strong>
           </div>
           <span className="status-pill"><span />{copy.status}</span>
         </div>
@@ -330,7 +333,7 @@ function SecurityVisual({ copy }: { copy: Copy['security'] }) {
   return (
     <div className="security-visual">
       <div className="security-toolbar">
-        <span><Icon name="shield" /> app.sslping.io</span>
+        <span><Icon name="shield" /> dashboard.sslping.io</span>
         <span className="status-pill"><span />A+</span>
       </div>
       <div className="certificate-path">
