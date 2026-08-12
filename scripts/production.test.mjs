@@ -85,7 +85,7 @@ test('nginx serves only allowlisted catalog hosts with host-specific SEO files a
   assert.match(headers, /Strict-Transport-Security/)
 })
 
-test('deployment declares explicit regional HTTPS and HTTP redirect routes', async () => {
+test('deployment uses spec-compliant wildcard regional routes while nginx allowlists catalog hosts', async () => {
   const manifest = await readFile(new URL('../deploy/kubernetes/marketing-site.yaml', import.meta.url), 'utf8')
 
   assert.doesNotMatch(manifest, /kind:\s*Namespace/)
@@ -99,7 +99,8 @@ test('deployment declares explicit regional HTTPS and HTTP redirect routes', asy
   assert.match(manifest, /sectionName:\s*regional/)
   assert.match(manifest, /name:\s*sslping-marketing-regional-http-redirect/)
   assert.match(manifest, /sectionName:\s*http/)
-  assert.match(manifest, /- us\.sslping\.io/)
+  assert.equal((manifest.match(/hostnames:\s*\["\*\.sslping\.io"\]/g) ?? []).length, 2)
+  assert.doesNotMatch(manifest, /hostnames:[\s\S]*?- us\.sslping\.io/)
 })
 
 test('production workflow verifies the regional listener and immutable cluster identity before deployment', async () => {
