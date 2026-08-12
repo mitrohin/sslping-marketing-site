@@ -19,6 +19,11 @@ export type IconName =
   | 'chat'
   | 'clock'
   | 'layers'
+  | 'search'
+  | 'external'
+  | 'chevron'
+  | 'mapPin'
+  | 'signal'
 
 const paths: Record<IconName, ReactNode> = {
   activity: <><path d="M3 12h4l2.2-6 4.2 12 2.3-6H21" /></>,
@@ -39,6 +44,11 @@ const paths: Record<IconName, ReactNode> = {
   chat: <><path d="M20 15a3 3 0 0 1-3 3H9l-5 3v-6a3 3 0 0 1-1-2V7a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3v8Z" /><path d="M8 10h.01M12 10h.01M16 10h.01" /></>,
   clock: <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></>,
   layers: <><path d="m12 3 9 5-9 5-9-5 9-5Z" /><path d="m3 12 9 5 9-5M3 16l9 5 9-5" /></>,
+  search: <><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></>,
+  external: <><path d="M14 5h5v5M19 5l-8 8" /><path d="M18 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" /></>,
+  chevron: <><path d="m8 10 4 4 4-4" /></>,
+  mapPin: <><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></>,
+  signal: <><path d="M5 16.5a10 10 0 0 1 14 0M8 13a6 6 0 0 1 8 0M11 9.5a2 2 0 0 1 2 0" /><circle cx="12" cy="19" r="1" /></>,
 }
 
 export function Icon({ name, ...props }: SVGProps<SVGSVGElement> & { name: IconName }) {

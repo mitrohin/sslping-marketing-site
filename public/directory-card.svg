@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">SSLPing public status directory</title>
+  <desc id="desc">A dark green map-inspired card with SSLPing branding and live status signals.</desc>
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(912 120) rotate(131) scale(620 560)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2f6659"/>
+      <stop offset="1" stop-color="#071b18" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#d7eadc" stroke-opacity=".07"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" rx="36" fill="#071b18"/>
+  <rect width="1200" height="630" rx="36" fill="url(#glow)"/>
+  <rect width="1200" height="630" rx="36" fill="url(#grid)"/>
+  <g transform="translate(74 70)">
+    <rect width="56" height="56" rx="16" fill="#b9f27c"/>
+    <path d="M11 29h10l4-10 7 20 5-12h9" fill="none" stroke="#071b18" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="74" y="39" fill="#f6f2e8" font-family="Arial, sans-serif" font-size="36" font-weight="700">SSLPing</text>
+    <text x="267" y="38" fill="#9db5ae" font-family="Arial, sans-serif" font-size="19" letter-spacing="3">PUBLIC STATUS DIRECTORY</text>
+  </g>
+  <text x="74" y="265" fill="#f6f2e8" font-family="Arial, sans-serif" font-size="74" font-weight="700" letter-spacing="-3">Find out what’s online.</text>
+  <text x="74" y="344" fill="#b9f27c" font-family="Arial, sans-serif" font-size="74" font-weight="700" letter-spacing="-3">Before the crowd does.</text>
+  <text x="78" y="409" fill="#b9cbc6" font-family="Arial, sans-serif" font-size="25">15,576 public status pages · 55 regional directories · checks every 5 minutes</text>
+  <g transform="translate(78 493)">
+    <rect width="318" height="64" rx="32" fill="#f6f2e8"/>
+    <circle cx="35" cy="32" r="7" fill="#14a77b"/>
+    <text x="57" y="40" fill="#071b18" font-family="Arial, sans-serif" font-size="22" font-weight="700">Browse monitored services</text>
+  </g>
+  <g fill="#b9f27c">
+    <circle cx="1008" cy="340" r="8"/>
+    <circle cx="870" cy="236" r="6"/>
+    <circle cx="1048" cy="182" r="5"/>
+    <circle cx="935" cy="447" r="5"/>
+  </g>
+  <g fill="none" stroke="#b9f27c" stroke-opacity=".42">
+    <circle cx="955" cy="312" r="185"/>
+    <circle cx="955" cy="312" r="128"/>
+    <path d="M770 312h370M955 127c-48 53-73 115-73 185s25 132 73 185M955 127c48 53 73 115 73 185s-25 132-73 185"/>
+  </g>
+</svg>

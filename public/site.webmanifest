@@ -1,0 +1,12 @@
+{
+  "name": "SSLPing Public Status Directory",
+  "short_name": "SSLPing",
+  "description": "Browse public website monitoring and status pages by region.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f1e8",
+  "theme_color": "#071b18",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

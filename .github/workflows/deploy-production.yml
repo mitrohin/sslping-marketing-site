@@ -88,6 +88,11 @@ jobs:
           doctl kubernetes cluster kubeconfig save "${CLUSTER_ID}" --expiry-seconds 1200
           kubectl get nodes
           kubectl get namespace sslping
+          kubectl -n sslping get gateway sslping-public \
+            -o jsonpath='{range .spec.listeners[*]}{.name}{"\n"}{end}' \
+            | grep -Fx regional
           sed "s|IMAGE_PLACEHOLDER|${DEPLOY_IMAGE}|g" deploy/kubernetes/marketing-site.yaml | kubectl apply -f -
           kubectl -n sslping rollout status deployment/sslping-marketing-site --timeout=5m
-          kubectl -n sslping get deployment/sslping-marketing-site service/sslping-marketing-site httproute/sslping-marketing-site httproute/sslping-marketing-www-redirect
+          kubectl -n sslping get deployment/sslping-marketing-site service/sslping-marketing-site \
+            httproute/sslping-marketing-site httproute/sslping-marketing-www-redirect \
+            httproute/sslping-marketing-regional httproute/sslping-marketing-regional-http-redirect
