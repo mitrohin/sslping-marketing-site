@@ -4,8 +4,8 @@
   "description": "Browse public website monitoring and status pages by region.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f4f1e8",
-  "theme_color": "#071b18",
+  "background_color": "#f3f5f7",
+  "theme_color": "#64dd8d",
   "icons": [
     { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
   ]

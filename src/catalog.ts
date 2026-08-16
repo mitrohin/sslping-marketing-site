@@ -13,6 +13,7 @@ export interface CatalogItem {
   name: string
   hostname: string
   serviceId: string
+  logoUrl: string
   statusCountry: string
   statusUrl: string
   regionCoverage: number
@@ -94,6 +95,7 @@ function toItem(target: CatalogTarget, statusCountry: string): CatalogItem {
     name: target.name,
     hostname: target.hostname,
     serviceId: target.serviceId,
+    logoUrl: `/assets/service-logos/${target.serviceId}.svg`,
     statusCountry,
     statusUrl: `https://status.sslping.io/${target.serviceId}-${statusCountry.toLowerCase()}`,
     regionCoverage: target.countries.length,

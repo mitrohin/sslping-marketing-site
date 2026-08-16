@@ -1,4 +1,4 @@
-import { type CSSProperties, type FormEvent, useEffect, useMemo, useState } from 'react'
+import { type CSSProperties, type FormEvent, useEffect, useMemo, useRef, useState } from 'react'
 import { catalogStats, getCatalogItems, getInitial, getServiceHue, getServiceMonogram } from './catalog'
 import { copy as localizedCopy, directionForLocale, type Copy } from './copy'
 import { Icon } from './Icon'
@@ -119,6 +119,7 @@ function RegionPicker({ page }: { page: PageData }) {
 
 function Header({ page }: { page: PageData }) {
   const [menuOpen, setMenuOpen] = useState(false)
+  const menuButton = useRef<HTMLButtonElement>(null)
   const navigation = [
     [page.copy.nav.directory, '#directory'],
     [page.copy.nav.how, '#how-it-works'],
@@ -131,11 +132,32 @@ function Header({ page }: { page: PageData }) {
     return () => document.body.classList.remove('menu-open')
   }, [menuOpen])
 
+  useEffect(() => {
+    if (!menuOpen) return undefined
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return
+      setMenuOpen(false)
+      menuButton.current?.focus()
+    }
+    window.addEventListener('keydown', closeOnEscape)
+    return () => window.removeEventListener('keydown', closeOnEscape)
+  }, [menuOpen])
+
   return (
     <header className="site-header">
+      <div className="notice-bar">
+        <div className="notice-inner">
+          <span><Icon name="shield" />{page.copy.hero.trustNote}</span>
+          <a href="#directory">{page.copy.nav.directory}<Icon name="arrow" /></a>
+        </div>
+      </div>
       <div className="header-inner">
         <a className="brand-link" href="#top" aria-label="SSLPing"><Brand /></a>
-        <nav className={menuOpen ? 'primary-nav primary-nav--open' : 'primary-nav'} aria-label="Primary">
+        <nav
+          id="primary-navigation"
+          className={menuOpen ? 'primary-nav primary-nav--open' : 'primary-nav'}
+          aria-label={page.copy.nav.directory}
+        >
           {navigation.map(([label, href]) => (
             <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}</a>
           ))}
@@ -147,12 +169,14 @@ function Header({ page }: { page: PageData }) {
         <div className="header-actions">
           <RegionPicker page={page} />
           <a className="login-link" href={DASHBOARD_LOGIN_URL}>{page.copy.nav.login}</a>
-          <a className="button button--lime header-cta" href={DASHBOARD_REGISTER_URL}>{page.copy.nav.monitoring}<Icon name="arrow" /></a>
+          <a className="button button--dark header-cta" href={DASHBOARD_REGISTER_URL}>{page.copy.nav.monitoring}<Icon name="arrow" /></a>
           <button
+            ref={menuButton}
             className="menu-toggle"
             type="button"
             aria-label={menuOpen ? page.copy.menu.close : page.copy.menu.open}
             aria-expanded={menuOpen}
+            aria-controls="primary-navigation"
             onClick={() => setMenuOpen((open) => !open)}
           >
             <Icon name={menuOpen ? 'close' : 'menu'} />
@@ -195,7 +219,7 @@ function Hero({ page, query, setQuery }: { page: PageData; query: string; setQue
               autoComplete="off"
               enterKeyHint="search"
             />
-            <button className="button button--coral" type="submit">{page.copy.hero.searchButton}<Icon name="arrow" /></button>
+            <button className="button button--dark hero-search-button" type="submit">{page.copy.hero.searchButton}<Icon name="arrow" /></button>
           </form>
           <p className="trust-note"><Icon name="shield" />{page.copy.hero.trustNote}</p>
           <dl className="hero-metrics">
@@ -241,14 +265,35 @@ function SectionIntro({ eyebrow, title, body, light = false }: { eyebrow: string
   )
 }
 
+export function ServiceLogo({ item }: { item: PageData['items'][number] }) {
+  const [loadFailed, setLoadFailed] = useState(false)
+
+  return (
+    <span className={loadFailed ? 'service-logo service-logo--fallback' : 'service-logo'} aria-hidden="true">
+      {loadFailed ? (
+        <span className="service-monogram">{getServiceMonogram(item.name)}</span>
+      ) : (
+        <img
+          className="service-logo__image"
+          src={item.logoUrl}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          onError={() => setLoadFailed(true)}
+        />
+      )}
+    </span>
+  )
+}
+
 function ServiceCard({ item, copy, global }: { item: PageData['items'][number]; copy: Copy; global: boolean }) {
   const style = { '--service-hue': getServiceHue(item.serviceId) } as CSSProperties
   return (
     <li className="service-item">
       <a className="service-card" href={item.statusUrl} style={style}>
-        <span className="service-monogram" aria-hidden="true">{getServiceMonogram(item.name)}</span>
+        <ServiceLogo item={item} />
         <span className="service-copy">
-          <strong>{item.name}</strong>
+          <strong><bdi>{item.name}</bdi></strong>
           <small dir="ltr">{item.hostname}</small>
           <span className="service-meta">
             <i />{copy.catalog.verifiedPage}
@@ -308,7 +353,7 @@ function Directory({ page, query, setQuery }: { page: PageData; query: string; s
             />
             {query && <button type="button" onClick={() => setQuery('')} aria-label={page.copy.catalog.clear}><Icon name="close" /></button>}
           </label>
-          <p>
+          <p role="status" aria-live="polite">
             {interpolate(
               filtered.length === 1 ? page.copy.catalog.resultSingular : page.copy.catalog.results,
               { count: formatNumber(filtered.length) },
@@ -316,9 +361,9 @@ function Directory({ page, query, setQuery }: { page: PageData; query: string; s
           </p>
         </div>
         <div className="letter-filter" role="group" aria-label={page.copy.catalog.filterLabel}>
-          <button className={letter === 'ALL' ? 'is-active' : ''} type="button" onClick={() => setLetter('ALL')}>{page.copy.catalog.all}</button>
+          <button className={letter === 'ALL' ? 'is-active' : ''} type="button" aria-pressed={letter === 'ALL'} onClick={() => setLetter('ALL')}>{page.copy.catalog.all}</button>
           {initials.map((initial) => (
-            <button className={letter === initial ? 'is-active' : ''} key={initial} type="button" onClick={() => setLetter(initial)}>{initial}</button>
+            <button className={letter === initial ? 'is-active' : ''} key={initial} type="button" aria-pressed={letter === initial} onClick={() => setLetter(initial)}>{initial}</button>
           ))}
         </div>
         {filtered.length > 0 ? (
@@ -376,9 +421,15 @@ function Regions({ page }: { page: PageData }) {
           {sortedRegions.map((region) => {
             const active = region.code === page.region.code
             return (
-              <a key={region.code} className={active ? 'region-card is-current' : 'region-card'} href={getRegionUrl(region.code)} hrefLang={getHreflang(region)}>
+              <a
+                key={region.code}
+                className={active ? 'region-card is-current' : 'region-card'}
+                href={getRegionUrl(region.code)}
+                hrefLang={getHreflang(region)}
+                aria-current={active ? 'page' : undefined}
+              >
                 <span className="region-flag" aria-hidden="true">{getRegionFlag(region.code)}</span>
-                <span><strong>{getRegionName(region, page.locale)}</strong><small>{region.code}</small></span>
+                <span><strong><bdi>{getRegionName(region, page.locale)}</bdi></strong><small dir="ltr">{region.code}</small></span>
                 {active ? <em>{page.copy.regions.current}</em> : <Icon name="arrow" />}
               </a>
             )

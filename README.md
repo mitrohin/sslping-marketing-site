@@ -17,6 +17,8 @@ call to action.
   host-specific sitemaps, and host-specific robots responses;
 - client-side name/domain search and alphabet filters as progressive
   enhancement;
+- locally served service logos for every catalog identity, with deterministic
+  monogram artwork when an attributable vector mark is unavailable;
 - real 404 responses for unsupported paths and unknown hosts;
 - no analytics, marketing scripts, cookie banner, external fonts or third-party
   image requests.
@@ -43,6 +45,12 @@ to `US`, and update the scale assertions.
 The vendored build input is documented in [`data/README.md`](data/README.md).
 It is intentionally static for crawlable HTML. Live incident and availability
 data stays on the linked public status pages.
+
+Catalog logos are also vendored and served from `/assets/service-logos/`; no
+visitor browser contacts the monitored service to render a card. Brand names
+and marks remain the property of their respective owners. They are displayed
+only to identify the linked public service, and their presence does not imply
+affiliation, sponsorship or endorsement.
 
 ## Local development
 

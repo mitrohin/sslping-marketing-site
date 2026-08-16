@@ -10,7 +10,10 @@
     "build:ssr": "vite build --ssr src/entry-server.tsx --outDir .ssr",
     "prerender": "node scripts/prerender.mjs",
     "preview": "vite preview",
-    "check": "tsc -b --pretty false",
+    "check": "tsc -b --pretty false && npm run logos:check",
+    "logos:sync": "node scripts/sync-service-logos.mjs",
+    "logos:refresh": "node scripts/sync-service-logos.mjs --refresh-official",
+    "logos:check": "node scripts/sync-service-logos.mjs --check",
     "test": "node --test scripts/production.test.mjs"
   },
   "dependencies": {
@@ -21,6 +24,7 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "4.3.4",
+    "simple-icons": "16.28.0",
     "typescript": "5.7.3",
     "vite": "6.4.3"
   }

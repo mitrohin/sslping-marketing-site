@@ -1,0 +1,3850 @@
+{
+  "source": "simple-icons",
+  "version": "16.28.0",
+  "generated_at": "2026-08-05",
+  "matches": [
+    {
+      "service_name": "1&1",
+      "icon_title": "1&1",
+      "icon_slug": "1and1",
+      "source_url": "https://www.united-internet.de/en/newsroom/media-center/logos.html",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "1Password",
+      "icon_title": "1Password",
+      "icon_slug": "1password",
+      "source_url": "https://1password.com/press",
+      "guidelines_url": "https://1password.com/press"
+    },
+    {
+      "service_name": "2k",
+      "icon_title": "2K",
+      "icon_slug": "2k",
+      "source_url": "https://support.2k.com/hc/en-us/articles/203972113-Digital-Copies-of-2K-Manuals",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "4chan",
+      "icon_title": "4chan",
+      "icon_slug": "4chan",
+      "source_url": "https://www.4chan.org",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "9gag",
+      "icon_title": "9GAG",
+      "icon_slug": "9gag",
+      "source_url": "https://commons.wikimedia.org/wiki/File:9gag_logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Adidas",
+      "icon_title": "Adidas",
+      "icon_slug": "adidas",
+      "source_url": "https://www.adidas.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "ADP",
+      "icon_title": "ADP",
+      "icon_slug": "adp",
+      "source_url": "https://www.adp.com",
+      "guidelines_url": "https://www.adp.com/legal.aspx"
+    },
+    {
+      "service_name": "Adyen",
+      "icon_title": "Adyen",
+      "icon_slug": "adyen",
+      "source_url": "https://www.adyen.com/press-and-media/presskit",
+      "guidelines_url": "https://www.adyen.com/press-and-media/presskit"
+    },
+    {
+      "service_name": "AeroMexico",
+      "icon_title": "Aeroméxico",
+      "icon_slug": "aeromexico",
+      "source_url": "https://www.aeromexico.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "AfterPay",
+      "icon_title": "Afterpay",
+      "icon_slug": "afterpay",
+      "source_url": "https://www.afterpay.com/en-AU/business/resources/marketing/logos",
+      "guidelines_url": "https://www.afterpay.com/en-AU/business/resources/marketing/brand-tools/brand-guidelines"
+    },
+    {
+      "service_name": "Agora",
+      "icon_title": "Agora",
+      "icon_slug": "agora",
+      "source_url": "https://github.com/AgoraIO/Docs-Source/blob/849872dd0496bada0a2dceecb3f79663e3b2d323/assets/images/others/agora-logo.svg",
+      "guidelines_url": "https://www.agora.io/en/terms-of-service/"
+    },
+    {
+      "service_name": "Air Asia",
+      "icon_title": "AirAsia",
+      "icon_slug": "airasia",
+      "source_url": "https://www.airasia.com/shop",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Air Canada",
+      "icon_title": "Air Canada",
+      "icon_slug": "aircanada",
+      "source_url": "https://www.aircanada.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Air China",
+      "icon_title": "Air China",
+      "icon_slug": "airchina",
+      "source_url": "https://www.airchina.com.cn/en/investor_relations",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Air Transat",
+      "icon_title": "Air Transat",
+      "icon_slug": "airtransat",
+      "source_url": "https://www.airtransat.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Airbnb",
+      "icon_title": "Airbnb",
+      "icon_slug": "airbnb",
+      "source_url": "https://www.airbnb.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Airtel",
+      "icon_title": "Airtel",
+      "icon_slug": "airtel",
+      "source_url": "https://www.airtel.in/logo-tune",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Akamai",
+      "icon_title": "Akamai",
+      "icon_slug": "akamai",
+      "source_url": "https://www.akamai.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Albert Heijn",
+      "icon_title": "Albert Heijn",
+      "icon_slug": "albertheijn",
+      "source_url": "https://www.ah.nl",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Aldi Nord",
+      "icon_title": "Aldi Nord",
+      "icon_slug": "aldinord",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aldi_Nord_201x_logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Aldi SÜD",
+      "icon_title": "Aldi Süd",
+      "icon_slug": "aldisud",
+      "source_url": "https://www.aldi-sued.de",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Alibaba Cloud",
+      "icon_title": "Alibaba Cloud",
+      "icon_slug": "alibabacloud",
+      "source_url": "https://www.alibabagroup.com/en/ir/reports",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "AliExpress",
+      "icon_title": "AliExpress",
+      "icon_slug": "aliexpress",
+      "source_url": "https://www.alibabagroup.com/en/ir/reports",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Allegro",
+      "icon_title": "Allegro",
+      "icon_slug": "allegro",
+      "source_url": "https://allegro.pl",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Ameba",
+      "icon_title": "Ameba",
+      "icon_slug": "ameba",
+      "source_url": "https://ameblo.jp",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "American Airlines",
+      "icon_title": "American Airlines",
+      "icon_slug": "americanairlines",
+      "source_url": "https://news.aa.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "American Express",
+      "icon_title": "American Express",
+      "icon_slug": "americanexpress",
+      "source_url": "https://commons.wikimedia.org/wiki/File:American_Express_logo_(2018).svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Anydesk",
+      "icon_title": "AnyDesk",
+      "icon_slug": "anydesk",
+      "source_url": "https://anydesk.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "App Store",
+      "icon_title": "App Store",
+      "icon_slug": "appstore",
+      "source_url": "https://developer.apple.com/app-store",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Apple Music",
+      "icon_title": "Apple Music",
+      "icon_slug": "applemusic",
+      "source_url": "https://www.apple.com/itunes/marketing-on-music/identity-guidelines.html#apple-music-icon",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Apple News",
+      "icon_title": "Apple News",
+      "icon_slug": "applenews",
+      "source_url": "https://www.apple.com/apple-news",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Apple Pay",
+      "icon_title": "Apple Pay",
+      "icon_slug": "applepay",
+      "source_url": "https://developer.apple.com/apple-pay/marketing",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Apple TV+",
+      "icon_title": "Apple TV",
+      "icon_slug": "appletv",
+      "source_url": "https://en.wikipedia.org/wiki/File:Apple_TV_(logo).svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "ArcGIS",
+      "icon_title": "ArcGIS",
+      "icon_slug": "arcgis",
+      "source_url": "https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Arch Linux",
+      "icon_title": "Arch Linux",
+      "icon_slug": "archlinux",
+      "source_url": "https://www.archlinux.org/art",
+      "guidelines_url": "https://wiki.archlinux.org/index.php/DeveloperWiki:TrademarkPolicy#Logo_Usage_Guidelines"
+    },
+    {
+      "service_name": "Archive of Our Own",
+      "icon_title": "Archive of Our Own",
+      "icon_slug": "archiveofourown",
+      "source_url": "https://archiveofourown.org",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Argos",
+      "icon_title": "Argos",
+      "icon_slug": "argos",
+      "source_url": "https://www.argos.co.uk",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Arlo",
+      "icon_title": "Arlo",
+      "icon_slug": "arlo",
+      "source_url": "https://www.arlo.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Asana",
+      "icon_title": "Asana",
+      "icon_slug": "asana",
+      "source_url": "https://asana.com/brand",
+      "guidelines_url": "https://asana.com/brand"
+    },
+    {
+      "service_name": "Asda",
+      "icon_title": "ASDA",
+      "icon_slug": "asda",
+      "source_url": "https://www.asda.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Aston Martin",
+      "icon_title": "Aston Martin",
+      "icon_slug": "astonmartin",
+      "source_url": "https://www.astonmartin.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Asus",
+      "icon_title": "ASUS",
+      "icon_slug": "asus",
+      "source_url": "https://www.asus.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "AT&T",
+      "icon_title": "AT&T",
+      "icon_slug": "atandt",
+      "source_url": "https://www.att.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Atlassian",
+      "icon_title": "Atlassian",
+      "icon_slug": "atlassian",
+      "source_url": "https://atlassian.design/resources/logo-library",
+      "guidelines_url": "https://atlassian.design/foundations/logos"
+    },
+    {
+      "service_name": "Auchan",
+      "icon_title": "Auchan",
+      "icon_slug": "auchan",
+      "source_url": "https://www.auchan.fr",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Auth0",
+      "icon_title": "Auth0",
+      "icon_slug": "auth0",
+      "source_url": "https://auth0.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Autodesk",
+      "icon_title": "Autodesk",
+      "icon_slug": "autodesk",
+      "source_url": "https://brand.autodesk.com/brand-system/logo",
+      "guidelines_url": "https://brand.autodesk.com/brand-system/logo"
+    },
+    {
+      "service_name": "Avianca",
+      "icon_title": "avianca",
+      "icon_slug": "avianca",
+      "source_url": "https://www.avianca.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Axis Bank",
+      "icon_title": "Axis Bank",
+      "icon_slug": "axisbank",
+      "source_url": "https://www.axisbank.com/shareholders-corner/shareholders-information/annual-reports",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Badoo",
+      "icon_title": "Badoo",
+      "icon_slug": "badoo",
+      "source_url": "https://badoo.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Bamboo",
+      "icon_title": "Bamboo",
+      "icon_slug": "bamboo",
+      "source_url": "https://www.atlassian.design/guidelines/marketing/resources/logo-files",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Bambu Lab",
+      "icon_title": "Bambu Lab",
+      "icon_slug": "bambulab",
+      "source_url": "https://bambulab.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Bandcamp",
+      "icon_title": "Bandcamp",
+      "icon_slug": "bandcamp",
+      "source_url": "https://bandcamp.com/buttons",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "BandLab",
+      "icon_title": "BandLab",
+      "icon_slug": "bandlab",
+      "source_url": "https://www.bandlab.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Barclays",
+      "icon_title": "Barclays",
+      "icon_slug": "barclays",
+      "source_url": "https://home.barclays",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Basecamp",
+      "icon_title": "Basecamp",
+      "icon_slug": "basecamp",
+      "source_url": "https://basecamp.com/about/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Beatport",
+      "icon_title": "Beatport",
+      "icon_slug": "beatport",
+      "source_url": "https://www.beatport.com",
+      "guidelines_url": "https://support.beatport.com/hc/en-us/articles/4412316336404-Beatport-Logos-and-Images"
+    },
+    {
+      "service_name": "Betfair",
+      "icon_title": "Betfair",
+      "icon_slug": "betfair",
+      "source_url": "https://www.betfair.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "BigCommerce",
+      "icon_title": "BigCommerce",
+      "icon_slug": "bigcommerce",
+      "source_url": "https://www.bigcommerce.co.uk/press",
+      "guidelines_url": "https://www.elastic.co/legal/trademarks"
+    },
+    {
+      "service_name": "Binance",
+      "icon_title": "Binance",
+      "icon_slug": "binance",
+      "source_url": "https://binance.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Binance 幣安",
+      "icon_title": "Binance",
+      "icon_slug": "binance",
+      "source_url": "https://binance.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Bitbucket",
+      "icon_title": "Bitbucket",
+      "icon_slug": "bitbucket",
+      "source_url": "https://atlassian.design/resources/logo-library",
+      "guidelines_url": "https://atlassian.design/foundations/logos"
+    },
+    {
+      "service_name": "Bitdefender",
+      "icon_title": "Bitdefender",
+      "icon_slug": "bitdefender",
+      "source_url": "https://brand.bitdefender.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Bitwarden",
+      "icon_title": "Bitwarden",
+      "icon_slug": "bitwarden",
+      "source_url": "https://bitwarden.com/brand",
+      "guidelines_url": "https://bitwarden.com/brand"
+    },
+    {
+      "service_name": "Blackberry",
+      "icon_title": "Blackberry",
+      "icon_slug": "blackberry",
+      "source_url": "https://www.blackberry.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Blogger",
+      "icon_title": "Blogger",
+      "icon_slug": "blogger",
+      "source_url": "https://www.blogger.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Bluesky",
+      "icon_title": "Bluesky",
+      "icon_slug": "bluesky",
+      "source_url": "https://bsky.social/about/blog/press-faq",
+      "guidelines_url": "https://bsky.social/about/blog/press-faq"
+    },
+    {
+      "service_name": "Booking.com",
+      "icon_title": "Booking.com",
+      "icon_slug": "bookingdotcom",
+      "source_url": "https://www.bookingholdings.com/media-room",
+      "guidelines_url": "https://www.bookingholdings.com/media-room"
+    },
+    {
+      "service_name": "Boots",
+      "icon_title": "Boots",
+      "icon_slug": "boots",
+      "source_url": "https://www.boots-uk.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Boulanger",
+      "icon_title": "boulanger",
+      "icon_slug": "boulanger",
+      "source_url": "https://www.boulanger.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Box",
+      "icon_title": "Box",
+      "icon_slug": "box",
+      "source_url": "https://www.box.com/en-gb/about-us/press",
+      "guidelines_url": "https://www.box.com/en-gb/about-us/press"
+    },
+    {
+      "service_name": "Braintree",
+      "icon_title": "Braintree",
+      "icon_slug": "braintree",
+      "source_url": "https://www.braintreepayments.com/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Brevo",
+      "icon_title": "Brevo",
+      "icon_slug": "brevo",
+      "source_url": "https://www.brevo.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "British Airways",
+      "icon_title": "British Airways",
+      "icon_slug": "britishairways",
+      "source_url": "https://www.britishairways.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "BT",
+      "icon_title": "BT",
+      "icon_slug": "bt",
+      "source_url": "https://www.bt.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Bunq",
+      "icon_title": "bunq",
+      "icon_slug": "bunq",
+      "source_url": "https://press.bunq.com/media_kits",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "CachyOS",
+      "icon_title": "CachyOS",
+      "icon_slug": "cachyos",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CachyOS_Logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Caixabank",
+      "icon_title": "CaixaBank",
+      "icon_slug": "caixabank",
+      "source_url": "https://www.caixabank.es/deployedfiles/particulares/Estaticos/Imagenes/Geolocalizador_CXB.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Calendly",
+      "icon_title": "Calendly",
+      "icon_slug": "calendly",
+      "source_url": "https://calendly.com/newsroom",
+      "guidelines_url": "https://calendly.com/newsroom"
+    },
+    {
+      "service_name": "CardMarket",
+      "icon_title": "Cardmarket",
+      "icon_slug": "cardmarket",
+      "source_url": "https://github.com/simple-icons/simple-icons/issues/13380#issuecomment-2993697122",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Carrefour 家樂福",
+      "icon_title": "Carrefour",
+      "icon_slug": "carrefour",
+      "source_url": "https://en.wikipedia.org/wiki/File:Carrefour_logo_no_tag.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Cash App",
+      "icon_title": "Cash App",
+      "icon_slug": "cashapp",
+      "source_url": "https://cash.app/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "CBC",
+      "icon_title": "CBC",
+      "icon_slug": "cbc",
+      "source_url": "https://www.cbc.ca",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "CHAI",
+      "icon_title": "Chai",
+      "icon_slug": "chai",
+      "source_url": "https://github.com/simple-icons/simple-icons/issues/4983#issuecomment-796736373",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Channel 4",
+      "icon_title": "Channel 4",
+      "icon_slug": "channel4",
+      "source_url": "https://mediaassets.channel4.com/guidelines/guide/34286b7b-ea25-404d-a43b-e912fc85b0e0/page/8a2dd59a-51df-4f47-aa37-c235a761455e",
+      "guidelines_url": "https://mediaassets.channel4.com/guidelines/guide/34286b7b-ea25-404d-a43b-e912fc85b0e0"
+    },
+    {
+      "service_name": "Chase",
+      "icon_title": "Chase",
+      "icon_slug": "chase",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chase_logo_2007.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Chess.com",
+      "icon_title": "Chess.com",
+      "icon_slug": "chessdotcom",
+      "source_url": "https://www.chess.com/article/view/chess-com-brand-resources",
+      "guidelines_url": "https://www.chess.com/article/view/chess-com-brand-resources"
+    },
+    {
+      "service_name": "Citrix",
+      "icon_title": "Citrix",
+      "icon_slug": "citrix",
+      "source_url": "https://brand.citrix.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "ClickUp",
+      "icon_title": "ClickUp",
+      "icon_slug": "clickup",
+      "source_url": "https://clickup.com/brand",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Cloudflare",
+      "icon_title": "Cloudflare",
+      "icon_slug": "cloudflare",
+      "source_url": "https://www.cloudflare.com/logo/",
+      "guidelines_url": "https://www.cloudflare.com/trademark/"
+    },
+    {
+      "service_name": "CNN",
+      "icon_title": "CNN",
+      "icon_slug": "cnn",
+      "source_url": "https://edition.cnn.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Co-op",
+      "icon_title": "Co-op",
+      "icon_slug": "coop",
+      "source_url": "https://www.co-operative.coop/media/assets",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Cocos",
+      "icon_title": "Cocos",
+      "icon_slug": "cocos",
+      "source_url": "https://www.cocos.com/en/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Codeberg",
+      "icon_title": "Codeberg",
+      "icon_slug": "codeberg",
+      "source_url": "https://codeberg.org/Codeberg/Design/src/commit/ac514aa9aaa2457d4af3c3e13df3ab136d22a49a/logo/special/codeberg-logo_special_fake-transaprency.svg",
+      "guidelines_url": "https://codeberg.org/Codeberg/Design"
+    },
+    {
+      "service_name": "CodeRabbit",
+      "icon_title": "CodeRabbit",
+      "icon_slug": "coderabbit",
+      "source_url": "https://www.coderabbit.ai/brand",
+      "guidelines_url": "https://www.coderabbit.ai/brand"
+    },
+    {
+      "service_name": "Coinbase",
+      "icon_title": "Coinbase",
+      "icon_slug": "coinbase",
+      "source_url": "https://www.coinbase.com/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Commerzbank",
+      "icon_title": "Commerzbank",
+      "icon_slug": "commerzbank",
+      "source_url": "https://commons.wikimedia.org/wiki/Category:Commerzbank_logos",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Confluence",
+      "icon_title": "Confluence",
+      "icon_slug": "confluence",
+      "source_url": "https://www.atlassian.com/company/news/press-kit",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Contabo",
+      "icon_title": "Contabo",
+      "icon_slug": "contabo",
+      "source_url": "https://contabo.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Counter-Strike",
+      "icon_title": "Counter-Strike",
+      "icon_slug": "counterstrike",
+      "source_url": "https://www.counter-strike.net",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Coursera",
+      "icon_title": "Coursera",
+      "icon_slug": "coursera",
+      "source_url": "https://about.coursera.org/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Crunchyroll",
+      "icon_title": "Crunchyroll",
+      "icon_slug": "crunchyroll",
+      "source_url": "https://www.crunchyroll.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "cursor",
+      "icon_title": "Cursor",
+      "icon_slug": "cursor",
+      "source_url": "https://cursor.com/brand",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Dailymotion",
+      "icon_title": "Dailymotion",
+      "icon_slug": "dailymotion",
+      "source_url": "https://careers.dailymotion.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Darty",
+      "icon_title": "Darty",
+      "icon_slug": "darty",
+      "source_url": "https://www.darty.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Das Erste",
+      "icon_title": "Das Erste",
+      "icon_slug": "daserste",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Das_Erste_2014.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Datadog",
+      "icon_title": "Datadog",
+      "icon_slug": "datadog",
+      "source_url": "https://www.datadoghq.com/about/resources",
+      "guidelines_url": "https://www.datadoghq.com/about/resources/"
+    },
+    {
+      "service_name": "Datto",
+      "icon_title": "Datto",
+      "icon_slug": "datto",
+      "source_url": "https://www.datto.com/brand/logos",
+      "guidelines_url": "https://www.datto.com/brand"
+    },
+    {
+      "service_name": "Dazn",
+      "icon_title": "DAZN",
+      "icon_slug": "dazn",
+      "source_url": "https://media.dazn.com/en/assets/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "DeepL",
+      "icon_title": "DeepL",
+      "icon_slug": "deepl",
+      "source_url": "https://www.deepl.com/press.html",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "DeepSeek",
+      "icon_title": "DeepSeek",
+      "icon_slug": "deepseek",
+      "source_url": "https://www.deepseek.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Deezer",
+      "icon_title": "Deezer",
+      "icon_slug": "deezer",
+      "source_url": "https://deezerbrand.com/document/37#/-/logo",
+      "guidelines_url": "https://deezerbrand.com/document/37#/-/logo"
+    },
+    {
+      "service_name": "Deliveroo",
+      "icon_title": "Deliveroo",
+      "icon_slug": "deliveroo",
+      "source_url": "https://deliveroo.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Delta",
+      "icon_title": "Delta",
+      "icon_slug": "delta",
+      "source_url": "https://news.delta.com/delta-air-lines-logos-brand-guidelines",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Deutsche Bahn",
+      "icon_title": "Deutsche Bahn",
+      "icon_slug": "deutschebahn",
+      "source_url": "https://www.bahn.de",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Deutsche Bank",
+      "icon_title": "Deutsche Bank",
+      "icon_slug": "deutschebank",
+      "source_url": "https://www.db.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "DeviantArt",
+      "icon_title": "DeviantArt",
+      "icon_slug": "deviantart",
+      "source_url": "https://help.deviantart.com/21",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "DHL",
+      "icon_title": "DHL",
+      "icon_slug": "dhl",
+      "source_url": "https://www.dpdhl-brands.com/dhl/en/guides/design-basics/logo-and-claim.html",
+      "guidelines_url": "https://www.dpdhl-brands.com/dhl/en/guides/design-basics/logo-and-claim.html"
+    },
+    {
+      "service_name": "DigitalOcean",
+      "icon_title": "DigitalOcean",
+      "icon_slug": "digitalocean",
+      "source_url": "https://www.digitalocean.com/press/",
+      "guidelines_url": "https://www.digitalocean.com/press/"
+    },
+    {
+      "service_name": "Discogs",
+      "icon_title": "Discogs",
+      "icon_slug": "discogs",
+      "source_url": "https://www.discogs.com/brand",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Discord",
+      "icon_title": "Discord",
+      "icon_slug": "discord",
+      "source_url": "https://discord.com/branding",
+      "guidelines_url": "https://discord.com/branding"
+    },
+    {
+      "service_name": "Docker",
+      "icon_title": "Docker",
+      "icon_slug": "docker",
+      "source_url": "https://www.docker.com/company/newsroom/media-resources",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "DoorDash",
+      "icon_title": "DoorDash",
+      "icon_slug": "doordash",
+      "source_url": "https://www.doordash.com/about/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Dota 2",
+      "icon_title": "Dota 2",
+      "icon_slug": "dota2",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dota_logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "dpd",
+      "icon_title": "DPD",
+      "icon_slug": "dpd",
+      "source_url": "https://www.dpd.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Dpd",
+      "icon_title": "DPD",
+      "icon_slug": "dpd",
+      "source_url": "https://www.dpd.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Dropbox",
+      "icon_title": "Dropbox",
+      "icon_slug": "dropbox",
+      "source_url": "https://www.dropbox.com/branding",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Duckduckgo",
+      "icon_title": "DuckDuckGo",
+      "icon_slug": "duckduckgo",
+      "source_url": "https://github.com/duckduckgo/duckduckgo-privacy-extension/blob/5c6ac8d6a07421adbfb97ee2ff855dd7655f8d71/shared/img/logo-small-grayscale.svg",
+      "guidelines_url": "https://duckduckgo.com/press#press-materials"
+    },
+    {
+      "service_name": "Duolingo",
+      "icon_title": "Duolingo",
+      "icon_slug": "duolingo",
+      "source_url": "https://design.duolingo.com",
+      "guidelines_url": "https://design.duolingo.com"
+    },
+    {
+      "service_name": "Dynatrace",
+      "icon_title": "Dynatrace",
+      "icon_slug": "dynatrace",
+      "source_url": "https://www.dynatrace.com/company/press-kit/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "EA",
+      "icon_title": "EA",
+      "icon_slug": "ea",
+      "source_url": "https://www.ea.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Easyjet",
+      "icon_title": "easyJet",
+      "icon_slug": "easyjet",
+      "source_url": "https://www.easyjet.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "eBay",
+      "icon_title": "eBay",
+      "icon_slug": "ebay",
+      "source_url": "https://go.developer.ebay.com/logos",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Ebox",
+      "icon_title": "EBOX",
+      "icon_slug": "ebox",
+      "source_url": "https://www.ebox.ca",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "edX",
+      "icon_title": "edX",
+      "icon_slug": "edx",
+      "source_url": "https://www.edx.org",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Element",
+      "icon_title": "Element",
+      "icon_slug": "element",
+      "source_url": "https://element.io",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Elementor",
+      "icon_title": "Elementor",
+      "icon_slug": "elementor",
+      "source_url": "https://elementor.com/logos/",
+      "guidelines_url": "https://elementor.com/logos/"
+    },
+    {
+      "service_name": "ElevenLabs",
+      "icon_title": "ElevenLabs",
+      "icon_slug": "elevenlabs",
+      "source_url": "https://elevenlabs.io/brand",
+      "guidelines_url": "https://elevenlabs.io/brand"
+    },
+    {
+      "service_name": "Emirates",
+      "icon_title": "Emirates",
+      "icon_slug": "emirates",
+      "source_url": "https://www.emirates.com/ie/english/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Envato",
+      "icon_title": "Envato",
+      "icon_slug": "envato",
+      "source_url": "https://envato.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Etsy",
+      "icon_title": "Etsy",
+      "icon_slug": "etsy",
+      "source_url": "https://www.etsy.com/uk/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Evernote",
+      "icon_title": "Evernote",
+      "icon_slug": "evernote",
+      "source_url": "https://evernote.com/about-us",
+      "guidelines_url": "https://evernote.com/about-us"
+    },
+    {
+      "service_name": "Expedia",
+      "icon_title": "Expedia",
+      "icon_slug": "expedia",
+      "source_url": "https://brandfolder.com/portals/brand-expedia",
+      "guidelines_url": "https://brandfolder.com/portals/brand-expedia"
+    },
+    {
+      "service_name": "Expensify",
+      "icon_title": "Expensify",
+      "icon_slug": "expensify",
+      "source_url": "https://use.expensify.com/press-kit",
+      "guidelines_url": "https://use.expensify.com/press-kit"
+    },
+    {
+      "service_name": "Express",
+      "icon_title": "Express",
+      "icon_slug": "express",
+      "source_url": "https://github.com/openjs-foundation/artwork/blob/3816245ebbf4707bdafde748350ac8476b6b5b62/projects/express/express-icon-black.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "ExpressVPN",
+      "icon_title": "ExpressVPN",
+      "icon_slug": "expressvpn",
+      "source_url": "https://www.expressvpn.com/press",
+      "guidelines_url": "https://www.expressvpn.com/press"
+    },
+    {
+      "service_name": "Facebook",
+      "icon_title": "Facebook",
+      "icon_slug": "facebook",
+      "source_url": "https://about.meta.com/brand/resources/facebook/logo",
+      "guidelines_url": "https://about.meta.com/brand/resources/facebook/logo"
+    },
+    {
+      "service_name": "Faceit",
+      "icon_title": "FACEIT",
+      "icon_slug": "faceit",
+      "source_url": "https://corporate.faceit.com/branding/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Fandom",
+      "icon_title": "Fandom",
+      "icon_slug": "fandom",
+      "source_url": "https://fandomdesignsystem.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Fastly",
+      "icon_title": "Fastly",
+      "icon_slug": "fastly",
+      "source_url": "https://assets.fastly.com/style-guide/docs/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "FedEx",
+      "icon_title": "FedEx",
+      "icon_slug": "fedex",
+      "source_url": "https://newsroom.fedex.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Feedly",
+      "icon_title": "Feedly",
+      "icon_slug": "feedly",
+      "source_url": "https://blog.feedly.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "FIFA",
+      "icon_title": "FIFA",
+      "icon_slug": "fifa",
+      "source_url": "https://en.wikipedia.org/wiki/FIFA",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Figma",
+      "icon_title": "Figma",
+      "icon_slug": "figma",
+      "source_url": "https://www.figma.com/using-the-figma-brand/",
+      "guidelines_url": "https://www.figma.com/using-the-figma-brand/"
+    },
+    {
+      "service_name": "Filen",
+      "icon_title": "Filen",
+      "icon_slug": "filen",
+      "source_url": "https://github.com/FilenCloudDienste/filen-drive-legacy/issues/166#issue-2139393162",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Fineco",
+      "icon_title": "Fineco",
+      "icon_slug": "fineco",
+      "source_url": "https://finecobank.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Fitbit",
+      "icon_title": "Fitbit",
+      "icon_slug": "fitbit",
+      "source_url": "https://www.fitbit.com/uk/home",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "FiveM",
+      "icon_title": "FiveM",
+      "icon_slug": "fivem",
+      "source_url": "https://fivem.net",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Fizz",
+      "icon_title": "Fizz",
+      "icon_slug": "fizz",
+      "source_url": "https://fizz.ca",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Flickr",
+      "icon_title": "Flickr",
+      "icon_slug": "flickr",
+      "source_url": "https://www.flickr.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Fnac",
+      "icon_title": "Fnac",
+      "icon_slug": "fnac",
+      "source_url": "https://www.fnac.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "foodpanda",
+      "icon_title": "foodpanda",
+      "icon_slug": "foodpanda",
+      "source_url": "https://www.foodpanda.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Fortnite",
+      "icon_title": "Fortnite",
+      "icon_slug": "fortnite",
+      "source_url": "https://www.fortnite.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Foxtel",
+      "icon_title": "Foxtel",
+      "icon_slug": "foxtel",
+      "source_url": "https://www.foxtel.com.au",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Fozzy",
+      "icon_title": "Fozzy",
+      "icon_slug": "fozzy",
+      "source_url": "https://fozzy.com/partners.shtml?tab=materials",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Freenet",
+      "icon_title": "freenet",
+      "icon_slug": "freenet",
+      "source_url": "https://www.freenet.ag",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Fritz",
+      "icon_title": "FRITZ!",
+      "icon_slug": "fritz",
+      "source_url": "https://fritz.com",
+      "guidelines_url": "https://business.avm.de/de/data/allgemeine-nutzungsbedingungen-business-portal"
+    },
+    {
+      "service_name": "Fur Affinity",
+      "icon_title": "Fur Affinity",
+      "icon_slug": "furaffinity",
+      "source_url": "https://www.furaffinity.net",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Gandi",
+      "icon_title": "Gandi",
+      "icon_slug": "gandi",
+      "source_url": "https://news.gandi.net/en/presskit/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Garmin",
+      "icon_title": "Garmin",
+      "icon_slug": "garmin",
+      "source_url": "https://creative.garmin.com/styleguide/logo/",
+      "guidelines_url": "https://creative.garmin.com/styleguide/brand/"
+    },
+    {
+      "service_name": "Genius",
+      "icon_title": "Genius",
+      "icon_slug": "genius",
+      "source_url": "https://genius.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Geocaching",
+      "icon_title": "Geocaching",
+      "icon_slug": "geocaching",
+      "source_url": "https://www.geocaching.com/about/logousage.aspx",
+      "guidelines_url": "https://www.geocaching.com/about/logousage.aspx"
+    },
+    {
+      "service_name": "Giphy",
+      "icon_title": "GIPHY",
+      "icon_slug": "giphy",
+      "source_url": "https://support.giphy.com/hc/en-us/articles/360022283772-GIPHY-Brand-Guidelines",
+      "guidelines_url": "https://support.giphy.com/hc/en-us/articles/360022283772-GIPHY-Brand-Guidelines"
+    },
+    {
+      "service_name": "Github",
+      "icon_title": "GitHub",
+      "icon_slug": "github",
+      "source_url": "https://github.com/logos",
+      "guidelines_url": "https://github.com/logos"
+    },
+    {
+      "service_name": "GitHub",
+      "icon_title": "GitHub",
+      "icon_slug": "github",
+      "source_url": "https://github.com/logos",
+      "guidelines_url": "https://github.com/logos"
+    },
+    {
+      "service_name": "Glassdoor",
+      "icon_title": "Glassdoor",
+      "icon_slug": "glassdoor",
+      "source_url": "https://www.glassdoor.com/about/newsroom",
+      "guidelines_url": "https://www.glassdoor.com/about/newsroom"
+    },
+    {
+      "service_name": "Glide",
+      "icon_title": "Glide",
+      "icon_slug": "glide",
+      "source_url": "https://brand.glide.page/dl/brand-assets",
+      "guidelines_url": "https://brand.glide.page/dl/brand-assets"
+    },
+    {
+      "service_name": "Glovo",
+      "icon_title": "Glovo",
+      "icon_slug": "glovo",
+      "source_url": "https://about.glovoapp.com/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Gmail",
+      "icon_title": "Gmail",
+      "icon_slug": "gmail",
+      "source_url": "https://fonts.gstatic.com/s/i/productlogos/gmail_2020q4/v8/192px.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "GMX",
+      "icon_title": "GMX",
+      "icon_slug": "gmx",
+      "source_url": "https://www.united-internet.de/en/newsroom/media-center/logos.html",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Go Daddy",
+      "icon_title": "GoDaddy",
+      "icon_slug": "godaddy",
+      "source_url": "https://aboutus.godaddy.net/newsroom/media-resources/",
+      "guidelines_url": "https://aboutus.godaddy.net/newsroom/media-resources/"
+    },
+    {
+      "service_name": "GoFundMe",
+      "icon_title": "GoFundMe",
+      "icon_slug": "gofundme",
+      "source_url": "https://www.gofundme.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "GOG.com",
+      "icon_title": "GOG.com",
+      "icon_slug": "gogdotcom",
+      "source_url": "https://www.cdprojekt.com/en/media/logotypes/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Gojek",
+      "icon_title": "Gojek",
+      "icon_slug": "gojek",
+      "source_url": "https://gojek.com",
+      "guidelines_url": "https://gojek.design"
+    },
+    {
+      "service_name": "goodreads",
+      "icon_title": "Goodreads",
+      "icon_slug": "goodreads",
+      "source_url": "https://www.goodreads.com/about/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google",
+      "icon_title": "Google",
+      "icon_slug": "google",
+      "source_url": "https://partnermarketinghub.withgoogle.com",
+      "guidelines_url": "https://about.google/brand-resource-center/brand-elements/"
+    },
+    {
+      "service_name": "Google Analytics",
+      "icon_title": "Google Analytics",
+      "icon_slug": "googleanalytics",
+      "source_url": "https://marketingplatform.google.com/intl/en_uk/about/analytics/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Calendar",
+      "icon_title": "Google Calendar",
+      "icon_slug": "googlecalendar",
+      "source_url": "https://fonts.gstatic.com/s/i/productlogos/calendar_2020q4/v8/192px.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Chat",
+      "icon_title": "Google Chat",
+      "icon_slug": "googlechat",
+      "source_url": "https://support.google.com/chat/answer/9455386",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Chrome",
+      "icon_title": "Google Chrome",
+      "icon_slug": "googlechrome",
+      "source_url": "https://www.google.com/chrome",
+      "guidelines_url": "https://partnermarketinghub.withgoogle.com/brands/chrome"
+    },
+    {
+      "service_name": "Google Cloud",
+      "icon_title": "Google Cloud",
+      "icon_slug": "googlecloud",
+      "source_url": "https://cloud.google.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Docs",
+      "icon_title": "Google Docs",
+      "icon_slug": "googledocs",
+      "source_url": "https://www.google.com/docs/about",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Drive",
+      "icon_title": "Google Drive",
+      "icon_slug": "googledrive",
+      "source_url": "https://developers.google.com/drive/web/branding",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Earth",
+      "icon_title": "Google Earth",
+      "icon_slug": "googleearth",
+      "source_url": "https://earth.google.com/web/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Gemini",
+      "icon_title": "Google Gemini",
+      "icon_slug": "googlegemini",
+      "source_url": "https://gemini.google.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Home",
+      "icon_title": "Google Home",
+      "icon_slug": "googlehome",
+      "source_url": "https://home.google.com/welcome/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Keep",
+      "icon_title": "Google Keep",
+      "icon_slug": "googlekeep",
+      "source_url": "https://about.google/brand-resource-center/logos-list/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Maps",
+      "icon_title": "Google Maps",
+      "icon_slug": "googlemaps",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Google_Maps_icon.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Maps 地圖",
+      "icon_title": "Google Maps",
+      "icon_slug": "googlemaps",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Google_Maps_icon.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Meet",
+      "icon_title": "Google Meet",
+      "icon_slug": "googlemeet",
+      "source_url": "https://about.google/brand-resource-center/logos-list/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Pay",
+      "icon_title": "Google Pay",
+      "icon_slug": "googlepay",
+      "source_url": "https://pay.google.com/intl/en_us/about/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Photos",
+      "icon_title": "Google Photos",
+      "icon_slug": "googlephotos",
+      "source_url": "https://partnermarketinghub.withgoogle.com/brands/google-photos/visual-identity/visual-identity/icon/",
+      "guidelines_url": "https://partnermarketinghub.withgoogle.com/brands/google-photos/visual-identity/visual-identity/icon/"
+    },
+    {
+      "service_name": "Google Play",
+      "icon_title": "Google Play",
+      "icon_slug": "googleplay",
+      "source_url": "https://partnermarketinghub.withgoogle.com/brands/google-play/visual-identity/primary-logos/",
+      "guidelines_url": "https://partnermarketinghub.withgoogle.com/brands/google-play/visual-identity/primary-logos/"
+    },
+    {
+      "service_name": "Google Sheets",
+      "icon_title": "Google Sheets",
+      "icon_slug": "googlesheets",
+      "source_url": "https://sheets.google.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Slides",
+      "icon_title": "Google Slides",
+      "icon_slug": "googleslides",
+      "source_url": "https://slides.google.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google Translate",
+      "icon_title": "Google Translate",
+      "icon_slug": "googletranslate",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Google_Translate_logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Google TV",
+      "icon_title": "Google TV",
+      "icon_slug": "googletv",
+      "source_url": "https://partnermarketinghub.withgoogle.com/brands/google-tv/visual-identity/visual-identity/",
+      "guidelines_url": "https://partnermarketinghub.withgoogle.com/brands/google-tv/visual-identity/visual-identity/"
+    },
+    {
+      "service_name": "google-keep",
+      "icon_title": "Google Keep",
+      "icon_slug": "googlekeep",
+      "source_url": "https://about.google/brand-resource-center/logos-list/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "GoToMeeting",
+      "icon_title": "GoToMeeting",
+      "icon_slug": "gotomeeting",
+      "source_url": "https://www.gotomeeting.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Grab",
+      "icon_title": "Grab",
+      "icon_slug": "grab",
+      "source_url": "https://en.wikipedia.org/wiki/File:Grab_(application)_logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Grammarly",
+      "icon_title": "Grammarly",
+      "icon_slug": "grammarly",
+      "source_url": "https://www.grammarly.com/media-assets",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Graylog",
+      "icon_title": "Graylog",
+      "icon_slug": "graylog",
+      "source_url": "https://www.graylog.org",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Gumtree",
+      "icon_title": "Gumtree",
+      "icon_slug": "gumtree",
+      "source_url": "https://www.gumtree.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "H&M",
+      "icon_title": "H&M",
+      "icon_slug": "handm",
+      "source_url": "https://www2.hm.com/en_gb/index.html",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Hack The Box",
+      "icon_title": "Hack The Box",
+      "icon_slug": "hackthebox",
+      "source_url": "https://www.hackthebox.com/contact-us",
+      "guidelines_url": "https://www.hackthebox.com/contact-us"
+    },
+    {
+      "service_name": "HBO",
+      "icon_title": "HBO",
+      "icon_slug": "hbo",
+      "source_url": "https://www.hbo.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "HBO Max",
+      "icon_title": "HBO Max",
+      "icon_slug": "hbomax",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Max_2025_logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "HDFC Bank",
+      "icon_title": "HDFC Bank",
+      "icon_slug": "hdfcbank",
+      "source_url": "https://www.hdfcsales.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "HelloFresh",
+      "icon_title": "HelloFresh",
+      "icon_slug": "hellofresh",
+      "source_url": "https://www.hellofreshgroup.com/en/newsroom/press-material/brand",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Hermes",
+      "icon_title": "Hermes",
+      "icon_slug": "hermes",
+      "source_url": "https://www.myhermes.de/assets/touchicons/favicon.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Hetzner",
+      "icon_title": "Hetzner",
+      "icon_slug": "hetzner",
+      "source_url": "https://www.hetzner.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Hey!",
+      "icon_title": "HEY",
+      "icon_slug": "hey",
+      "source_url": "https://hey.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Hilton",
+      "icon_title": "Hilton",
+      "icon_slug": "hilton",
+      "source_url": "https://www.hilton.com",
+      "guidelines_url": "https://stories.hilton.com/media-kit-hilton-corporate"
+    },
+    {
+      "service_name": "Honey",
+      "icon_title": "Honey",
+      "icon_slug": "honey",
+      "source_url": "https://www.joinhoney.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Hootsuite",
+      "icon_title": "Hootsuite",
+      "icon_slug": "hootsuite",
+      "source_url": "https://hootsuite.widencollective.com/portals/bafpk5oo/bafpk5oo/MediaKitAssets/c/b9e3a7bb-aca7-48d7-90ed-cff5898aafd0",
+      "guidelines_url": "https://hootsuite.widencollective.com/portals/bafpk5oo/MediaKitAssets"
+    },
+    {
+      "service_name": "Hostinger",
+      "icon_title": "Hostinger",
+      "icon_slug": "hostinger",
+      "source_url": "https://www.hostinger.com/newsroom",
+      "guidelines_url": "https://www.hostinger.com/newsroom"
+    },
+    {
+      "service_name": "Hotels.com",
+      "icon_title": "Hotels.com",
+      "icon_slug": "hotelsdotcom",
+      "source_url": "https://www.hotels.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "HSBC",
+      "icon_title": "HSBC",
+      "icon_slug": "hsbc",
+      "source_url": "https://www.hsbc.com",
+      "guidelines_url": "https://www.hsbc.com/terms-and-conditions"
+    },
+    {
+      "service_name": "Huawei",
+      "icon_title": "Huawei",
+      "icon_slug": "huawei",
+      "source_url": "https://e.huawei.com/ph/material/partner/0a72728b864949c48b22106454352483",
+      "guidelines_url": "https://e.huawei.com/ph/material/partner/0a72728b864949c48b22106454352483"
+    },
+    {
+      "service_name": "Hubspot",
+      "icon_title": "HubSpot",
+      "icon_slug": "hubspot",
+      "source_url": "https://www.hubspot.com/style-guide",
+      "guidelines_url": "https://www.hubspot.com/style-guide"
+    },
+    {
+      "service_name": "Hugging Face",
+      "icon_title": "Hugging Face",
+      "icon_slug": "huggingface",
+      "source_url": "https://huggingface.co/brand",
+      "guidelines_url": "https://huggingface.co/brand"
+    },
+    {
+      "service_name": "Humble Bundle",
+      "icon_title": "Humble Bundle",
+      "icon_slug": "humblebundle",
+      "source_url": "https://support.humblebundle.com/hc/en-us/articles/202742060-Bundle-Logos",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Hungry Jack's",
+      "icon_title": "Hungry Jack's",
+      "icon_slug": "hungryjacks",
+      "source_url": "https://www.hungryjacks.com.au",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Iberia",
+      "icon_title": "Iberia",
+      "icon_slug": "iberia",
+      "source_url": "https://iberia.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "ICICI Bank",
+      "icon_title": "ICICI Bank",
+      "icon_slug": "icicibank",
+      "source_url": "https://www.icicibank.com/ms/aboutus/annual-reports/2022-23/icici/assets/images/home-page/logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "iCloud",
+      "icon_title": "iCloud",
+      "icon_slug": "icloud",
+      "source_url": "https://commons.wikimedia.org/wiki/File:ICloud_logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "ICQ",
+      "icon_title": "ICQ",
+      "icon_slug": "icq",
+      "source_url": "https://commons.wikimedia.org/wiki/File:ICQNewlogo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "iFixit",
+      "icon_title": "iFixit",
+      "icon_slug": "ifixit",
+      "source_url": "https://www.ifixit.com",
+      "guidelines_url": "https://www.ifixit.com/Info/Media"
+    },
+    {
+      "service_name": "IFTTT",
+      "icon_title": "IFTTT",
+      "icon_slug": "ifttt",
+      "source_url": "https://ifttt.com/discover/brand-guidelines",
+      "guidelines_url": "https://ifttt.com/discover/brand-guidelines"
+    },
+    {
+      "service_name": "IGN",
+      "icon_title": "IGN",
+      "icon_slug": "ign",
+      "source_url": "https://www.ign.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "IKEA",
+      "icon_title": "IKEA",
+      "icon_slug": "ikea",
+      "source_url": "https://www.ikea.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "iMessage",
+      "icon_title": "iMessage",
+      "icon_slug": "imessage",
+      "source_url": "https://commons.wikimedia.org/wiki/File:IMessage_logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Imgur",
+      "icon_title": "Imgur",
+      "icon_slug": "imgur",
+      "source_url": "https://imgurinc.com/press",
+      "guidelines_url": "https://help.imgur.com/hc/en-us/articles/202062878-Trademark-Use-Policy"
+    },
+    {
+      "service_name": "Imou",
+      "icon_title": "Imou",
+      "icon_slug": "imou",
+      "source_url": "https://www.imoulife.com/support/download/userManual",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Indeed",
+      "icon_title": "Indeed",
+      "icon_slug": "indeed",
+      "source_url": "https://indeed.design/resources",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Infomaniak",
+      "icon_title": "Infomaniak",
+      "icon_slug": "infomaniak",
+      "source_url": "https://www.infomaniak.com/en/about/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Ingress",
+      "icon_title": "Ingress",
+      "icon_slug": "ingress",
+      "source_url": "https://ingress.com",
+      "guidelines_url": "https://niantic.helpshift.com/a/ingress/?s=ingress-events&f=brand-and-fan-site-guidelines&p=web"
+    },
+    {
+      "service_name": "Instacart",
+      "icon_title": "Instacart",
+      "icon_slug": "instacart",
+      "source_url": "https://www.instacart.com/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Instagram",
+      "icon_title": "Instagram",
+      "icon_slug": "instagram",
+      "source_url": "https://about.meta.com/brand/resources/instagram",
+      "guidelines_url": "https://about.meta.com/brand/resources/instagram"
+    },
+    {
+      "service_name": "Internet Archive",
+      "icon_title": "Internet Archive",
+      "icon_slug": "internetarchive",
+      "source_url": "https://archive.org",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "IONOS",
+      "icon_title": "Ionos",
+      "icon_slug": "ionos",
+      "source_url": "https://www.ionos.de",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Issuu",
+      "icon_title": "Issuu",
+      "icon_slug": "issuu",
+      "source_url": "https://issuu.com/press",
+      "guidelines_url": "https://issuu.com/press"
+    },
+    {
+      "service_name": "itch.io",
+      "icon_title": "Itch.io",
+      "icon_slug": "itchdotio",
+      "source_url": "https://itch.io/press-kit",
+      "guidelines_url": "https://itch.io/press-kit"
+    },
+    {
+      "service_name": "JCB",
+      "icon_title": "JCB",
+      "icon_slug": "jcb",
+      "source_url": "https://www.global.jcb/en/about-us/brand-concept/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "JetBrains",
+      "icon_title": "JetBrains",
+      "icon_slug": "jetbrains",
+      "source_url": "https://www.jetbrains.com/company/brand/logos/",
+      "guidelines_url": "https://www.jetbrains.com/company/brand/"
+    },
+    {
+      "service_name": "Jio",
+      "icon_title": "Jio",
+      "icon_slug": "jio",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Reliance_Jio_Logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Jira",
+      "icon_title": "Jira",
+      "icon_slug": "jira",
+      "source_url": "https://atlassian.design/resources/logo-library",
+      "guidelines_url": "https://atlassian.design/foundations/logos/"
+    },
+    {
+      "service_name": "Jitsi",
+      "icon_title": "Jitsi",
+      "icon_slug": "jitsi",
+      "source_url": "https://github.com/jitsi/jitsi-meet/blob/767101497c9a52abf8cef7893e8d6e7e4283bbfc/images/watermark.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Just Eat",
+      "icon_title": "Just Eat",
+      "icon_slug": "justeat",
+      "source_url": "https://brand-box.marketing.just-eat.com",
+      "guidelines_url": "https://brand-box.marketing.just-eat.com"
+    },
+    {
+      "service_name": "JustEat",
+      "icon_title": "Just Eat",
+      "icon_slug": "justeat",
+      "source_url": "https://brand-box.marketing.just-eat.com",
+      "guidelines_url": "https://brand-box.marketing.just-eat.com"
+    },
+    {
+      "service_name": "Kagi",
+      "icon_title": "Kagi",
+      "icon_slug": "kagi",
+      "source_url": "https://kagi.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "KashFlow",
+      "icon_title": "KashFlow",
+      "icon_slug": "kashflow",
+      "source_url": "https://www.kashflow.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Keeper",
+      "icon_title": "Keeper",
+      "icon_slug": "keeper",
+      "source_url": "https://docs.keeper.io/en/sso-connect-cloud/graphic-assets",
+      "guidelines_url": "https://www.keepersecurity.com/assets/pdf/brand-guidelines.pdf"
+    },
+    {
+      "service_name": "KeyCDN",
+      "icon_title": "KeyCDN",
+      "icon_slug": "keycdn",
+      "source_url": "https://www.keycdn.com/logos",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Khan Academy",
+      "icon_title": "Khan Academy",
+      "icon_slug": "khanacademy",
+      "source_url": "https://khanacademy.zendesk.com/hc/en-us/articles/202483630-Press-room",
+      "guidelines_url": "https://support.khanacademy.org/hc/en-us/articles/202263034-Trademark-and-Brand-Usage-Policy"
+    },
+    {
+      "service_name": "Kick",
+      "icon_title": "Kick",
+      "icon_slug": "kick",
+      "source_url": "https://kick.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Kickstarter",
+      "icon_title": "Kickstarter",
+      "icon_slug": "kickstarter",
+      "source_url": "https://www.kickstarter.com/help/brand_assets",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Kik",
+      "icon_title": "Kik",
+      "icon_slug": "kik",
+      "source_url": "https://www.kik.com/news/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Klarna",
+      "icon_title": "Klarna",
+      "icon_slug": "klarna",
+      "source_url": "https://klarna.design",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Kleinanzeigen",
+      "icon_title": "Kleinanzeigen",
+      "icon_slug": "kleinanzeigen",
+      "source_url": "https://www.kleinanzeigen.de",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "KLM",
+      "icon_title": "KLM",
+      "icon_slug": "klm",
+      "source_url": "https://www.klm.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Koyeb",
+      "icon_title": "Koyeb",
+      "icon_slug": "koyeb",
+      "source_url": "https://www.koyeb.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "last.fm",
+      "icon_title": "Last.fm",
+      "icon_slug": "lastdotfm",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lastfm_logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "LastPass",
+      "icon_title": "LastPass",
+      "icon_slug": "lastpass",
+      "source_url": "https://lastpass.com/press-room/",
+      "guidelines_url": "https://lastpass.com/press-room/"
+    },
+    {
+      "service_name": "League of Legends",
+      "icon_title": "League of Legends",
+      "icon_slug": "leagueoflegends",
+      "source_url": "https://www.leagueoflegends.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Let's Encrypt",
+      "icon_title": "Let's Encrypt",
+      "icon_slug": "letsencrypt",
+      "source_url": "https://letsencrypt.org/trademarks/",
+      "guidelines_url": "https://letsencrypt.org/trademarks/"
+    },
+    {
+      "service_name": "Letterboxd",
+      "icon_title": "Letterboxd",
+      "icon_slug": "letterboxd",
+      "source_url": "https://letterboxd.com/about/brand/",
+      "guidelines_url": "https://letterboxd.com/about/brand/"
+    },
+    {
+      "service_name": "Lidl",
+      "icon_title": "Lidl",
+      "icon_slug": "lidl",
+      "source_url": "https://www.lidl.de",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Line",
+      "icon_title": "LINE",
+      "icon_slug": "line",
+      "source_url": "https://line.me/en/logo",
+      "guidelines_url": "https://line.me/en/logo"
+    },
+    {
+      "service_name": "Loom",
+      "icon_title": "Loom",
+      "icon_slug": "loom",
+      "source_url": "https://www.loom.com/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Lufthansa",
+      "icon_title": "Lufthansa",
+      "icon_slug": "lufthansa",
+      "source_url": "https://www.lufthansa.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Lumen",
+      "icon_title": "Lumen",
+      "icon_slug": "lumen",
+      "source_url": "https://lumen.laravel.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Lydia",
+      "icon_title": "Lydia",
+      "icon_slug": "lydia",
+      "source_url": "https://lydia-app.com/en/info/press.html",
+      "guidelines_url": "https://lydia-app.com/en/info/press.html"
+    },
+    {
+      "service_name": "Magic",
+      "icon_title": "Magic",
+      "icon_slug": "magic",
+      "source_url": "https://magic.link/brand-assets",
+      "guidelines_url": "https://magic.link/brand-assets"
+    },
+    {
+      "service_name": "Mail.com",
+      "icon_title": "mail.com",
+      "icon_slug": "maildotcom",
+      "source_url": "https://www.mail.com",
+      "guidelines_url": "https://www.mail.com/company/terms/"
+    },
+    {
+      "service_name": "Mailbox",
+      "icon_title": "mailbox",
+      "icon_slug": "mailbox",
+      "source_url": "https://mailbox.org/en/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Mailchimp",
+      "icon_title": "MailChimp",
+      "icon_slug": "mailchimp",
+      "source_url": "https://mailchimp.com/about/brand-assets",
+      "guidelines_url": "https://mailchimp.com/about/brand-assets"
+    },
+    {
+      "service_name": "Make",
+      "icon_title": "Make",
+      "icon_slug": "make",
+      "source_url": "https://www.make.com/en/press",
+      "guidelines_url": "https://www.make.com/en/press"
+    },
+    {
+      "service_name": "Mastercard",
+      "icon_title": "MasterCard",
+      "icon_slug": "mastercard",
+      "source_url": "https://www.mastercard.com/brandcenter/us/en/download-artwork.html",
+      "guidelines_url": "https://www.mastercard.com/brandcenter/us/en/brand-requirements/mastercard.html"
+    },
+    {
+      "service_name": "Mastodon",
+      "icon_title": "Mastodon",
+      "icon_slug": "mastodon",
+      "source_url": "https://github.com/mastodon/mastodon/blob/7ccf7a73f1c47a8c03712c39f7c591e837cf6d08/app/javascript/images/logo-symbol-icon.svg",
+      "guidelines_url": "https://joinmastodon.org/branding"
+    },
+    {
+      "service_name": "Matrix",
+      "icon_title": "Matrix",
+      "icon_slug": "matrix",
+      "source_url": "https://matrix.org",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Mazda",
+      "icon_title": "Mazda",
+      "icon_slug": "mazda",
+      "source_url": "https://www.mazda.com/en/about/profile/library/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "McAfee",
+      "icon_title": "McAfee",
+      "icon_slug": "mcafee",
+      "source_url": "https://www.mcafee.com/enterprise/en-us/about/newsroom/product-images.html",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "MediaMarkt",
+      "icon_title": "MediaMarkt",
+      "icon_slug": "mediamarkt",
+      "source_url": "https://www.mediamarkt.de",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Meetup",
+      "icon_title": "Meetup",
+      "icon_slug": "meetup",
+      "source_url": "https://www.meetup.com/media/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Mega",
+      "icon_title": "MEGA",
+      "icon_slug": "mega",
+      "source_url": "https://mega.io/media",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "MEGA",
+      "icon_title": "MEGA",
+      "icon_slug": "mega",
+      "source_url": "https://mega.io/media",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Mercado Pago",
+      "icon_title": "Mercado Pago",
+      "icon_slug": "mercadopago",
+      "source_url": "https://www.mercadopago.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "METRO",
+      "icon_title": "Metro",
+      "icon_slug": "metro",
+      "source_url": "https://facebook.github.io/metro/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "MeWe",
+      "icon_title": "MeWe",
+      "icon_slug": "mewe",
+      "source_url": "https://mewe.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Milanote",
+      "icon_title": "Milanote",
+      "icon_slug": "milanote",
+      "source_url": "https://milanote.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Miraheze",
+      "icon_title": "Miraheze",
+      "icon_slug": "miraheze",
+      "source_url": "https://miraheze.org",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Miro",
+      "icon_title": "Miro",
+      "icon_slug": "miro",
+      "source_url": "https://miro.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Mistral AI",
+      "icon_title": "Mistral AI",
+      "icon_slug": "mistralai",
+      "source_url": "https://chat.mistral.ai",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Modrinth",
+      "icon_title": "Modrinth",
+      "icon_slug": "modrinth",
+      "source_url": "https://github.com/modrinth/art/blob/d5ab4f965b0b4cea7201967483885ecd8d04a562/Branding/Favicon/favicon.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "MoneyGram",
+      "icon_title": "MoneyGram",
+      "icon_slug": "moneygram",
+      "source_url": "https://moneygram.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Monzo",
+      "icon_title": "Monzo",
+      "icon_slug": "monzo",
+      "source_url": "https://monzo.com/press/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Morrisons",
+      "icon_title": "Morrisons",
+      "icon_slug": "morrisons",
+      "source_url": "https://groceries.morrisons.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Movistar",
+      "icon_title": "Movistar",
+      "icon_slug": "movistar",
+      "source_url": "https://www.movistar.com.co",
+      "guidelines_url": "https://brandfactory.telefonica.com/document/4201#/movistar/mision-y-valores"
+    },
+    {
+      "service_name": "Mubi",
+      "icon_title": "MUBI",
+      "icon_slug": "mubi",
+      "source_url": "https://mubi.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "myob",
+      "icon_title": "MYOB",
+      "icon_slug": "myob",
+      "source_url": "https://www.myob.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "N26",
+      "icon_title": "N26",
+      "icon_slug": "n26",
+      "source_url": "https://n26.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "NameMC",
+      "icon_title": "NameMC",
+      "icon_slug": "namemc",
+      "source_url": "https://namemc.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Napster",
+      "icon_title": "Napster",
+      "icon_slug": "napster",
+      "source_url": "https://www.napster.com/us/wp-content/uploads/sites/5/2022/03/logo-napster.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "National Grid",
+      "icon_title": "National Grid",
+      "icon_slug": "nationalgrid",
+      "source_url": "https://www.nationalgrid.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "National Rail",
+      "icon_title": "National Rail",
+      "icon_slug": "nationalrail",
+      "source_url": "https://www.nationalrailguidelines.co.uk",
+      "guidelines_url": "https://www.nationalrailguidelines.co.uk"
+    },
+    {
+      "service_name": "Neon",
+      "icon_title": "Neon",
+      "icon_slug": "neon",
+      "source_url": "https://neon.com/brand",
+      "guidelines_url": "https://neon.com/brand"
+    },
+    {
+      "service_name": "Neptune",
+      "icon_title": "Neptune",
+      "icon_slug": "neptune",
+      "source_url": "https://neptune.ai",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "netcup",
+      "icon_title": "netcup",
+      "icon_slug": "netcup",
+      "source_url": "https://www.netcup.de/static/assets/images/favicons/favicon.svg",
+      "guidelines_url": "https://www.netcup.eu/ueber-netcup/werbemittel"
+    },
+    {
+      "service_name": "Netflix",
+      "icon_title": "Netflix",
+      "icon_slug": "netflix",
+      "source_url": "https://brand.netflix.com/en/assets/logos",
+      "guidelines_url": "https://brand.netflix.com/en/assets/logos"
+    },
+    {
+      "service_name": "Netlify",
+      "icon_title": "Netlify",
+      "icon_slug": "netlify",
+      "source_url": "https://www.netlify.com/press/",
+      "guidelines_url": "https://www.netlify.com/press/"
+    },
+    {
+      "service_name": "New Relic",
+      "icon_title": "New Relic",
+      "icon_slug": "newrelic",
+      "source_url": "https://newrelic.com/about/media-assets",
+      "guidelines_url": "https://newrelic.com/about/media-assets#guidelines"
+    },
+    {
+      "service_name": "Next DNS",
+      "icon_title": "NextDNS",
+      "icon_slug": "nextdns",
+      "source_url": "https://github.com/simple-icons/simple-icons/pull/9150#issuecomment-1856317201",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "NextDNS",
+      "icon_title": "NextDNS",
+      "icon_slug": "nextdns",
+      "source_url": "https://github.com/simple-icons/simple-icons/pull/9150#issuecomment-1856317201",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "ngrok",
+      "icon_title": "ngrok",
+      "icon_slug": "ngrok",
+      "source_url": "https://ngrok.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "NordVPN",
+      "icon_title": "NordVPN",
+      "icon_slug": "nordvpn",
+      "source_url": "https://nordvpn.com/press-area/",
+      "guidelines_url": "https://nordvpn.com/press-area/"
+    },
+    {
+      "service_name": "Norwegian",
+      "icon_title": "Norwegian",
+      "icon_slug": "norwegian",
+      "source_url": "https://www.norwegian.com/ie/travel-info/on-board/in-flight-entertainment/magazine/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Notion",
+      "icon_title": "Notion",
+      "icon_slug": "notion",
+      "source_url": "https://www.notion.so",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Now",
+      "icon_title": "NOW",
+      "icon_slug": "now",
+      "source_url": "https://www.nowtv.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "NPM",
+      "icon_title": "npm",
+      "icon_slug": "npm",
+      "source_url": "https://www.npmjs.com",
+      "guidelines_url": "https://docs.npmjs.com/policies/logos-and-usage"
+    },
+    {
+      "service_name": "Nu Bank",
+      "icon_title": "Nubank",
+      "icon_slug": "nubank",
+      "source_url": "https://nubank.com.br/en/press/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Nvidia",
+      "icon_title": "NVIDIA",
+      "icon_slug": "nvidia",
+      "source_url": "https://www.nvidia.com/en-us",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "O2",
+      "icon_title": "O2",
+      "icon_slug": "o2",
+      "source_url": "https://www.telefonica.de/presse/fotos/logos.html",
+      "guidelines_url": "https://www.telefonica.de/presse/fotos/logos.html"
+    },
+    {
+      "service_name": "Odido",
+      "icon_title": "Odido",
+      "icon_slug": "odido",
+      "source_url": "https://www.odido.nl",
+      "guidelines_url": "https://merk.odido.nl/en/logo"
+    },
+    {
+      "service_name": "Odoo",
+      "icon_title": "Odoo",
+      "icon_slug": "odoo",
+      "source_url": "https://www.odoo.com/page/brand-assets",
+      "guidelines_url": "https://www.odoo.com/page/brand-assets"
+    },
+    {
+      "service_name": "OkCupid",
+      "icon_title": "okcupid",
+      "icon_slug": "okcupid",
+      "source_url": "https://okcupid.com/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Okta",
+      "icon_title": "Okta",
+      "icon_slug": "okta",
+      "source_url": "https://www.okta.com/press-room/media-assets/",
+      "guidelines_url": "https://www.okta.com/terms-of-use-for-okta-content/"
+    },
+    {
+      "service_name": "OnStar",
+      "icon_title": "OnStar",
+      "icon_slug": "onstar",
+      "source_url": "https://www.onstar.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "OpenRouter",
+      "icon_title": "OpenRouter",
+      "icon_slug": "openrouter",
+      "source_url": "https://openrouter.ai",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "OpenStreetMap",
+      "icon_title": "OpenStreetMap",
+      "icon_slug": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org",
+      "guidelines_url": "https://wiki.osmfoundation.org/wiki/Trademark_Policy"
+    },
+    {
+      "service_name": "OpenText",
+      "icon_title": "OpenText",
+      "icon_slug": "opentext",
+      "source_url": "https://www.opentext.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "OPNsense",
+      "icon_title": "OPNsense",
+      "icon_slug": "opnsense",
+      "source_url": "https://github.com/opnsense/core/blob/f4b69b9b565d2747eb40d7d23e060f4a3c81a071/src/opnsense/www/themes/opnsense/build/images/icon-logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Opsgenie",
+      "icon_title": "Opsgenie",
+      "icon_slug": "opsgenie",
+      "source_url": "https://www.atlassian.com/company/news/press-kit",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Orange",
+      "icon_title": "Orange",
+      "icon_slug": "orange",
+      "source_url": "https://brand.orange.com",
+      "guidelines_url": "https://system.design.orange.com/0c1af118d/p/494474-guidelines"
+    },
+    {
+      "service_name": "Otto",
+      "icon_title": "Otto",
+      "icon_slug": "otto",
+      "source_url": "https://www.ottogroup.com/en/presse/material.php",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Overleaf",
+      "icon_title": "Overleaf",
+      "icon_slug": "overleaf",
+      "source_url": "https://www.overleaf.com/for/press/media-resources",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "OVH",
+      "icon_title": "OVH",
+      "icon_slug": "ovh",
+      "source_url": "https://www.ovh.com/ca/en/newsroom/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Paddy Power",
+      "icon_title": "Paddy Power",
+      "icon_slug": "paddypower",
+      "source_url": "https://www.paddypower.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Padlet",
+      "icon_title": "Padlet",
+      "icon_slug": "padlet",
+      "source_url": "https://legal.padlet.com/trademark",
+      "guidelines_url": "https://legal.padlet.com/trademark"
+    },
+    {
+      "service_name": "PagerDuty",
+      "icon_title": "PagerDuty",
+      "icon_slug": "pagerduty",
+      "source_url": "https://www.pagerduty.com/brand/",
+      "guidelines_url": "https://www.pagerduty.com/brand/"
+    },
+    {
+      "service_name": "Pandora",
+      "icon_title": "Pandora",
+      "icon_slug": "pandora",
+      "source_url": "https://www.pandoraforbrands.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Paramount+",
+      "icon_title": "Paramount+",
+      "icon_slug": "paramountplus",
+      "source_url": "https://www.paramount.com/brand/paramount-plus",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Passbolt",
+      "icon_title": "Passbolt",
+      "icon_slug": "passbolt",
+      "source_url": "https://www.passbolt.com/credits/press-kit",
+      "guidelines_url": "https://www.passbolt.com/credits/brand-guidelines"
+    },
+    {
+      "service_name": "Patreon",
+      "icon_title": "Patreon",
+      "icon_slug": "patreon",
+      "source_url": "https://www.patreon.com/brand",
+      "guidelines_url": "https://www.patreon.com/brand"
+    },
+    {
+      "service_name": "Payback",
+      "icon_title": "PAYBACK",
+      "icon_slug": "payback",
+      "source_url": "https://www.payback.de/filialen-prospekte",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Payoneer",
+      "icon_title": "Payoneer",
+      "icon_slug": "payoneer",
+      "source_url": "https://www.payoneer.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Paypal",
+      "icon_title": "PayPal",
+      "icon_slug": "paypal",
+      "source_url": "https://www.paypal.com/us",
+      "guidelines_url": "https://newsroom.paypal-corp.com/media-resources"
+    },
+    {
+      "service_name": "Paytm",
+      "icon_title": "Paytm",
+      "icon_slug": "paytm",
+      "source_url": "https://paytm.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Peloton",
+      "icon_title": "Peloton",
+      "icon_slug": "peloton",
+      "source_url": "https://press.onepeloton.com/#logos",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Personio",
+      "icon_title": "Personio",
+      "icon_slug": "personio",
+      "source_url": "https://www.personio.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Photobucket",
+      "icon_title": "Photobucket",
+      "icon_slug": "photobucket",
+      "source_url": "https://photobucket.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Picnic",
+      "icon_title": "Picnic",
+      "icon_slug": "picnic",
+      "source_url": "https://picnic.app/nl/feestdagen/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Pingdom",
+      "icon_title": "Pingdom",
+      "icon_slug": "pingdom",
+      "source_url": "https://www.pingdom.com/resources/brand-assets/",
+      "guidelines_url": "https://www.pingdom.com/resources/brand-assets/"
+    },
+    {
+      "service_name": "Pinterest",
+      "icon_title": "Pinterest",
+      "icon_slug": "pinterest",
+      "source_url": "https://business.pinterest.com/en/brand-guidelines",
+      "guidelines_url": "https://business.pinterest.com/en/brand-guidelines"
+    },
+    {
+      "service_name": "Plausible Analytics",
+      "icon_title": "Plausible Analytics",
+      "icon_slug": "plausibleanalytics",
+      "source_url": "https://github.com/plausible/docs/blob/be5c935484e075f1e0caf3c9b3351ddd62348139/static/img/logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Plex",
+      "icon_title": "Plex",
+      "icon_slug": "plex",
+      "source_url": "https://brand.plex.tv",
+      "guidelines_url": "https://brand.plex.tv"
+    },
+    {
+      "service_name": "Pluralsight",
+      "icon_title": "Pluralsight",
+      "icon_slug": "pluralsight",
+      "source_url": "https://www.pluralsight.com/newsroom/brand-assets",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Polestar",
+      "icon_title": "Polestar",
+      "icon_slug": "polestar",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Polestar_logo_2020.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Postman",
+      "icon_title": "Postman",
+      "icon_slug": "postman",
+      "source_url": "https://www.getpostman.com/resources/media-assets/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Presto",
+      "icon_title": "Presto",
+      "icon_slug": "presto",
+      "source_url": "https://github.com/prestodb/presto/blob/414ab2a6bbdcca6479c2615b048920adac34dd20/presto-docs/src/main/resources/logo/web/fb/dark-blue/Presto_FB_Lockups_DARKBLUE_BG-14.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Prezi",
+      "icon_title": "Prezi",
+      "icon_slug": "prezi",
+      "source_url": "https://prezi.com/press/kit/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "ProSieben",
+      "icon_title": "ProSieben",
+      "icon_slug": "prosieben",
+      "source_url": "https://www.prosieben.de",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Proton VPN",
+      "icon_title": "Proton VPN",
+      "icon_slug": "protonvpn",
+      "source_url": "https://proton.me/media/kit",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Protonmail",
+      "icon_title": "Proton Mail",
+      "icon_slug": "protonmail",
+      "source_url": "https://proton.me/media/kit",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "ProtonMail",
+      "icon_title": "Proton Mail",
+      "icon_slug": "protonmail",
+      "source_url": "https://proton.me/media/kit",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Qantas",
+      "icon_title": "Qantas",
+      "icon_slug": "qantas",
+      "source_url": "https://www.qantas.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Qlik",
+      "icon_title": "Qlik",
+      "icon_slug": "qlik",
+      "source_url": "https://www.qlik.com",
+      "guidelines_url": "https://www.qlik.com/us/legal/trademarks"
+    },
+    {
+      "service_name": "Quad9",
+      "icon_title": "Quad9",
+      "icon_slug": "quad9",
+      "source_url": "https://github.com/Quad9DNS/documentation/blob/185e1289a33781e23ccea6c952f14e9b8c69234e/docs/images/favicon.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Qualys",
+      "icon_title": "Qualys",
+      "icon_slug": "qualys",
+      "source_url": "https://www.qualys.com",
+      "guidelines_url": "https://www.qualys.com/company/newsroom/media-contacts"
+    },
+    {
+      "service_name": "Quora",
+      "icon_title": "Quora",
+      "icon_slug": "quora",
+      "source_url": "https://www.quora.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "QWant",
+      "icon_title": "Qwant",
+      "icon_slug": "qwant",
+      "source_url": "https://about.qwant.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Railway",
+      "icon_title": "Railway",
+      "icon_slug": "railway",
+      "source_url": "https://railway.app",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Razer",
+      "icon_title": "Razer",
+      "icon_slug": "razer",
+      "source_url": "https://press.razer.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Reddit",
+      "icon_title": "Reddit",
+      "icon_slug": "reddit",
+      "source_url": "https://www.redditinc.com/brand",
+      "guidelines_url": "https://www.redditinc.com/brand"
+    },
+    {
+      "service_name": "Redsys",
+      "icon_title": "Redsys",
+      "icon_slug": "redsys",
+      "source_url": "https://redsys.es",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Retool",
+      "icon_title": "Retool",
+      "icon_slug": "retool",
+      "source_url": "https://retool.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Revolut",
+      "icon_title": "Revolut",
+      "icon_slug": "revolut",
+      "source_url": "https://developer.revolut.com/docs/resources/marketing-assets-guidelines/marketing-guidelines",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Ring",
+      "icon_title": "Ring",
+      "icon_slug": "ring",
+      "source_url": "https://store.ring.com/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Roblox",
+      "icon_title": "Roblox",
+      "icon_slug": "roblox",
+      "source_url": "https://www.roblox.com",
+      "guidelines_url": "https://en.help.roblox.com/hc/en-us/articles/115001708126-Roblox-Name-and-Logo-Community-Usage-Guidelines"
+    },
+    {
+      "service_name": "Rockstar Games",
+      "icon_title": "Rockstar Games",
+      "icon_slug": "rockstargames",
+      "source_url": "https://www.rockstargames.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Roku",
+      "icon_title": "Roku",
+      "icon_slug": "roku",
+      "source_url": "https://www.roku.com",
+      "guidelines_url": "https://docs.roku.com/published/trademarkguidelines/en/ca"
+    },
+    {
+      "service_name": "Roll20",
+      "icon_title": "Roll20",
+      "icon_slug": "roll20",
+      "source_url": "https://roll20.net",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "RTL+",
+      "icon_title": "RTL",
+      "icon_slug": "rtl",
+      "source_url": "https://www.rtl.de",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Rumble",
+      "icon_title": "Rumble",
+      "icon_slug": "rumble",
+      "source_url": "https://rumble.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Ryanair",
+      "icon_title": "Ryanair",
+      "icon_slug": "ryanair",
+      "source_url": "https://corporate.ryanair.com/media-centre/stock-images-gallery/#album-container-3",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Sage",
+      "icon_title": "Sage",
+      "icon_slug": "sage",
+      "source_url": "https://www.sage.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Sahibinden",
+      "icon_title": "Sahibinden",
+      "icon_slug": "sahibinden",
+      "source_url": "https://www.sahibinden.com/favicon.ico",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Samsung",
+      "icon_title": "Samsung",
+      "icon_slug": "samsung",
+      "source_url": "https://www.samsung.com/us/about-us/brand-identity/logo/",
+      "guidelines_url": "https://www.samsung.com/us/about-us/brand-identity/logo/"
+    },
+    {
+      "service_name": "Sat.1",
+      "icon_title": "Sat.1",
+      "icon_slug": "sat1",
+      "source_url": "https://www.prosiebensat1.com/presse/downloads/logos",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Scaleway",
+      "icon_title": "Scaleway",
+      "icon_slug": "scaleway",
+      "source_url": "https://ultraviolet.scaleway.com",
+      "guidelines_url": "https://ultraviolet.scaleway.com"
+    },
+    {
+      "service_name": "Scratch",
+      "icon_title": "Scratch",
+      "icon_slug": "scratch",
+      "source_url": "https://github.com/LLK/scratch-link/blob/027e3754ba6db976495e905023d5ac5e730dccfc/Assets/Windows/SVG/Windows%20Tray%20400x400.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "SEMRush",
+      "icon_title": "Semrush",
+      "icon_slug": "semrush",
+      "source_url": "https://www.semrush.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Shadow",
+      "icon_title": "Shadow",
+      "icon_slug": "shadow",
+      "source_url": "https://shadow.tech",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Shazam",
+      "icon_title": "Shazam",
+      "icon_slug": "shazam",
+      "source_url": "https://shazam.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Shopee 蝦皮購物",
+      "icon_title": "Shopee",
+      "icon_slug": "shopee",
+      "source_url": "https://shopee.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Shopify",
+      "icon_title": "Shopify",
+      "icon_slug": "shopify",
+      "source_url": "https://www.shopify.com/brand-assets",
+      "guidelines_url": "https://www.shopify.com/brand-assets"
+    },
+    {
+      "service_name": "signal",
+      "icon_title": "Signal",
+      "icon_slug": "signal",
+      "source_url": "https://signal.org/brand",
+      "guidelines_url": "https://signal.org/brand"
+    },
+    {
+      "service_name": "Signal",
+      "icon_title": "Signal",
+      "icon_slug": "signal",
+      "source_url": "https://signal.org/brand",
+      "guidelines_url": "https://signal.org/brand"
+    },
+    {
+      "service_name": "SketchUp",
+      "icon_title": "SketchUp",
+      "icon_slug": "sketchup",
+      "source_url": "https://www.sketchup.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Sky",
+      "icon_title": "Sky",
+      "icon_slug": "sky",
+      "source_url": "https://www.skysports.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "SKY",
+      "icon_title": "Sky",
+      "icon_slug": "sky",
+      "source_url": "https://www.skysports.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Slideshare",
+      "icon_title": "SlideShare",
+      "icon_slug": "slideshare",
+      "source_url": "https://www.slideshare.net/ss/creators/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Smart",
+      "icon_title": "smart",
+      "icon_slug": "smart",
+      "source_url": "https://global.smart.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "SmugMug",
+      "icon_title": "SmugMug",
+      "icon_slug": "smugmug",
+      "source_url": "https://www.smugmughelp.com/articles/409-smugmug-s-logo-and-usage",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Snapchat",
+      "icon_title": "Snapchat",
+      "icon_slug": "snapchat",
+      "source_url": "https://www.snapchat.com/brand-guidelines",
+      "guidelines_url": "https://www.snapchat.com/brand-guidelines"
+    },
+    {
+      "service_name": "Sonos",
+      "icon_title": "Sonos",
+      "icon_slug": "sonos",
+      "source_url": "https://www.sonos.com/en-gb/home",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Soundcloud",
+      "icon_title": "SoundCloud",
+      "icon_slug": "soundcloud",
+      "source_url": "https://press.soundcloud.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Sourceforge",
+      "icon_title": "SourceForge",
+      "icon_slug": "sourceforge",
+      "source_url": "https://sourceforge.net",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Sparkasse",
+      "icon_title": "Sparkasse",
+      "icon_slug": "sparkasse",
+      "source_url": "https://www.sparkasse.de",
+      "guidelines_url": "https://www.sparkasse.de/nutzungshinweise.html"
+    },
+    {
+      "service_name": "Speedtest",
+      "icon_title": "Speedtest",
+      "icon_slug": "speedtest",
+      "source_url": "https://www.speedtest.net",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Splunk",
+      "icon_title": "Splunk",
+      "icon_slug": "splunk",
+      "source_url": "https://www.splunk.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Spond",
+      "icon_title": "Spond",
+      "icon_slug": "spond",
+      "source_url": "https://spond.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Spotify",
+      "icon_title": "Spotify",
+      "icon_slug": "spotify",
+      "source_url": "https://developer.spotify.com/documentation/general/design-and-branding/#using-our-logo",
+      "guidelines_url": "https://developer.spotify.com/documentation/general/design-and-branding/#using-our-logo"
+    },
+    {
+      "service_name": "Square",
+      "icon_title": "Square",
+      "icon_slug": "square",
+      "source_url": "https://squareup.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Squarespace",
+      "icon_title": "Squarespace",
+      "icon_slug": "squarespace",
+      "source_url": "https://www.squarespace.com/logo-guidelines",
+      "guidelines_url": "https://www.squarespace.com/brand-guidelines"
+    },
+    {
+      "service_name": "Stack Overflow",
+      "icon_title": "Stack Overflow",
+      "icon_slug": "stackoverflow",
+      "source_url": "https://stackoverflow.design/brand/logo/",
+      "guidelines_url": "https://stackoverflow.com/legal/trademark-guidance"
+    },
+    {
+      "service_name": "Starbucks",
+      "icon_title": "Starbucks",
+      "icon_slug": "starbucks",
+      "source_url": "https://starbucks.com",
+      "guidelines_url": "https://creative.starbucks.com"
+    },
+    {
+      "service_name": "Starling Bank",
+      "icon_title": "Starling Bank",
+      "icon_slug": "starlingbank",
+      "source_url": "https://www.starlingbank.com/media/",
+      "guidelines_url": "https://www.starlingbank.com/docs/brand/starling-bank-brand-guidelines.pdf"
+    },
+    {
+      "service_name": "Startpage",
+      "icon_title": "Startpage",
+      "icon_slug": "startpage",
+      "source_url": "https://startpage.com/en/about-us",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Steam",
+      "icon_title": "Steam",
+      "icon_slug": "steam",
+      "source_url": "https://partner.steamgames.com/doc/marketing/branding",
+      "guidelines_url": "https://partner.steamgames.com/doc/marketing/branding"
+    },
+    {
+      "service_name": "Storyblok",
+      "icon_title": "Storyblok",
+      "icon_slug": "storyblok",
+      "source_url": "https://www.storyblok.com/press",
+      "guidelines_url": "https://www.storyblok.com/press"
+    },
+    {
+      "service_name": "Strava",
+      "icon_title": "Strava",
+      "icon_slug": "strava",
+      "source_url": "https://itunes.apple.com/us/app/strava-running-and-cycling-gps/id426826309",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Streamlabs",
+      "icon_title": "Streamlabs",
+      "icon_slug": "streamlabs",
+      "source_url": "https://streamlabs.com/about",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Stripe",
+      "icon_title": "Stripe",
+      "icon_slug": "stripe",
+      "source_url": "https://stripe.com/newsroom/information",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Stubhub",
+      "icon_title": "StubHub",
+      "icon_slug": "stubhub",
+      "source_url": "https://www.stubhub.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Substack",
+      "icon_title": "Substack",
+      "icon_slug": "substack",
+      "source_url": "https://on.substack.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Sumo Logic",
+      "icon_title": "Sumo Logic",
+      "icon_slug": "sumologic",
+      "source_url": "https://sites.google.com/sumologic.com/sumo-logic-brand/home",
+      "guidelines_url": "https://sites.google.com/sumologic.com/sumo-logic-brand/home"
+    },
+    {
+      "service_name": "Suno",
+      "icon_title": "Suno",
+      "icon_slug": "suno",
+      "source_url": "https://suno.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Sunrise",
+      "icon_title": "Sunrise",
+      "icon_slug": "sunrise",
+      "source_url": "https://www.sunrise.ch",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Supercell",
+      "icon_title": "Supercell",
+      "icon_slug": "supercell",
+      "source_url": "https://brand.supercell.com/media",
+      "guidelines_url": "https://brand.supercell.com/media"
+    },
+    {
+      "service_name": "Surfshark",
+      "icon_title": "Surfshark",
+      "icon_slug": "surfshark",
+      "source_url": "https://surfshark.com/press/assets",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Swiggy",
+      "icon_title": "Swiggy",
+      "icon_slug": "swiggy",
+      "source_url": "https://www.swiggy.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Tado",
+      "icon_title": "tado°",
+      "icon_slug": "tado",
+      "source_url": "https://www.tado.com/gb-en/press-assets",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Tailscale",
+      "icon_title": "Tailscale",
+      "icon_slug": "tailscale",
+      "source_url": "https://tailscale.com/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Taobao",
+      "icon_title": "Taobao",
+      "icon_slug": "taobao",
+      "source_url": "https://www.alibabagroup.com/en/ir/reports",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Target",
+      "icon_title": "Target",
+      "icon_slug": "target",
+      "source_url": "https://www.target.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "TaTa",
+      "icon_title": "Tata",
+      "icon_slug": "tata",
+      "source_url": "https://www.tatasteel.com/media/media-kit/logos-usage-guidelines",
+      "guidelines_url": "https://www.tatasteel.com/media/media-kit/logos-usage-guidelines"
+    },
+    {
+      "service_name": "Teamspeak",
+      "icon_title": "TeamSpeak",
+      "icon_slug": "teamspeak",
+      "source_url": "https://teamspeak.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "TeamViewer",
+      "icon_title": "TeamViewer",
+      "icon_slug": "teamviewer",
+      "source_url": "https://www.teamviewer.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Tele5",
+      "icon_title": "TELE 5",
+      "icon_slug": "tele5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tele_5_Logo_2021.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Telegram",
+      "icon_title": "Telegram",
+      "icon_slug": "telegram",
+      "source_url": "https://telegram.org/tour/screenshots",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Telenor",
+      "icon_title": "Telenor",
+      "icon_slug": "telenor",
+      "source_url": "https://www.telenor.no",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Tesco",
+      "icon_title": "Tesco",
+      "icon_slug": "tesco",
+      "source_url": "https://www.tesco.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Tesla",
+      "icon_title": "Tesla",
+      "icon_slug": "tesla",
+      "source_url": "https://www.tesla.com/tesla-gallery",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "The Finals",
+      "icon_title": "THE FINALS",
+      "icon_slug": "thefinals",
+      "source_url": "https://www.embark-studios.com/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "The Weather Channel",
+      "icon_title": "The Weather Channel",
+      "icon_slug": "theweatherchannel",
+      "source_url": "https://weather.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Thingiverse",
+      "icon_title": "Thingiverse",
+      "icon_slug": "thingiverse",
+      "source_url": "https://www.thingiverse.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Threads",
+      "icon_title": "Threads",
+      "icon_slug": "threads",
+      "source_url": "https://www.meta.com/brand/resources/instagram/threads",
+      "guidelines_url": "https://www.meta.com/brand/resources/instagram/threads"
+    },
+    {
+      "service_name": "Threema",
+      "icon_title": "Threema",
+      "icon_slug": "threema",
+      "source_url": "https://threema.ch/en/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Ticketmaster",
+      "icon_title": "Ticketmaster",
+      "icon_slug": "ticketmaster",
+      "source_url": "https://design.ticketmaster.com/brand/overview/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Tidal",
+      "icon_title": "TIDAL",
+      "icon_slug": "tidal",
+      "source_url": "https://tidal.com/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Tide",
+      "icon_title": "Tide",
+      "icon_slug": "tide",
+      "source_url": "https://www.tide.co/newsroom",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "TietoEvry",
+      "icon_title": "TietoEVRY",
+      "icon_slug": "tietoevry",
+      "source_url": "https://www.tietoevry.com/en/about-us/our-company/",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "TikTok",
+      "icon_title": "TikTok",
+      "icon_slug": "tiktok",
+      "source_url": "https://tiktok.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Tinder",
+      "icon_title": "Tinder",
+      "icon_slug": "tinder",
+      "source_url": "https://www.gotinder.com/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Todoist",
+      "icon_title": "Todoist",
+      "icon_slug": "todoist",
+      "source_url": "https://doist.com/press",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "TomTom",
+      "icon_title": "TomTom",
+      "icon_slug": "tomtom",
+      "source_url": "https://brandguide.tomtom.com/design/logo",
+      "guidelines_url": "https://brandguide.tomtom.com"
+    },
+    {
+      "service_name": "Tor Project",
+      "icon_title": "Tor Project",
+      "icon_slug": "torproject",
+      "source_url": "https://styleguide.torproject.org/brand-assets",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "TradingVIew",
+      "icon_title": "TradingView",
+      "icon_slug": "tradingview",
+      "source_url": "https://www.tradingview.com/media-kit",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Trakt",
+      "icon_title": "Trakt",
+      "icon_slug": "trakt",
+      "source_url": "https://trakt.tv/branding",
+      "guidelines_url": "https://trakt.tv/branding"
+    },
+    {
+      "service_name": "Transport for Ireland",
+      "icon_title": "Transport for Ireland",
+      "icon_slug": "transportforireland",
+      "source_url": "https://www.transportforireland.ie",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Trello",
+      "icon_title": "Trello",
+      "icon_slug": "trello",
+      "source_url": "https://atlassian.design/resources/logo-library",
+      "guidelines_url": "https://atlassian.design/foundations/logos"
+    },
+    {
+      "service_name": "Trend Micro",
+      "icon_title": "Trend Micro",
+      "icon_slug": "trendmicro",
+      "source_url": "https://www.trendmicro.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Tripadvisor",
+      "icon_title": "Tripadvisor",
+      "icon_slug": "tripadvisor",
+      "source_url": "https://tripadvisor.mediaroom.com/logo-guidelines",
+      "guidelines_url": "https://tripadvisor.mediaroom.com/logo-guidelines"
+    },
+    {
+      "service_name": "Trove",
+      "icon_title": "Trove",
+      "icon_slug": "trove",
+      "source_url": "https://trove.nla.gov.au/about/who-we-are/our-logo",
+      "guidelines_url": "https://trove.nla.gov.au/about/who-we-are/trove-brand-guidelines"
+    },
+    {
+      "service_name": "Trustpilot",
+      "icon_title": "Trustpilot",
+      "icon_slug": "trustpilot",
+      "source_url": "https://support.trustpilot.com/hc/en-us/articles/206289947-Trustpilot-Brand-Assets-Style-Guide",
+      "guidelines_url": "https://support.trustpilot.com/hc/en-us/articles/206289947-Trustpilot-Brand-Assets-Style-Guide"
+    },
+    {
+      "service_name": "TryHackMe",
+      "icon_title": "TryHackMe",
+      "icon_slug": "tryhackme",
+      "source_url": "https://tryhackme.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Tubi",
+      "icon_title": "Tubi",
+      "icon_slug": "tubi",
+      "source_url": "https://gdpr.tubi.tv",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Tumblr",
+      "icon_title": "Tumblr",
+      "icon_slug": "tumblr",
+      "source_url": "https://www.tumblr.com/logo",
+      "guidelines_url": "https://www.tumblr.com/logo"
+    },
+    {
+      "service_name": "Turkish Airlines",
+      "icon_title": "Turkish Airlines",
+      "icon_slug": "turkishairlines",
+      "source_url": "https://www.turkishairlines.com/en-int/press-room/logo-archive/index.html",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Tuta",
+      "icon_title": "Tuta",
+      "icon_slug": "tuta",
+      "source_url": "https://github.com/tutao/tutanota/blob/65d087b1bc2cb7aee46e7a46431303483d2da986/resources/favicon/logo-favicon.svg",
+      "guidelines_url": "https://tuta.com/press"
+    },
+    {
+      "service_name": "TV4 Play",
+      "icon_title": "TV4 Play",
+      "icon_slug": "tv4play",
+      "source_url": "https://tv4play.se",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Twitch",
+      "icon_title": "Twitch",
+      "icon_slug": "twitch",
+      "source_url": "https://brand.twitch.tv",
+      "guidelines_url": "https://brand.twitch.tv"
+    },
+    {
+      "service_name": "Uber",
+      "icon_title": "Uber",
+      "icon_slug": "uber",
+      "source_url": "https://assets.uber.com/d/k4nuxdZ8MC7E/logos/collection/151",
+      "guidelines_url": "https://assets.uber.com/d/k4nuxdZ8MC7E/user-guide#/user-guide/terms-of-use"
+    },
+    {
+      "service_name": "Uber Eats",
+      "icon_title": "Uber Eats",
+      "icon_slug": "ubereats",
+      "source_url": "https://assets.uber.com/d/k4nuxdZ8MC7E/logos/collection/150",
+      "guidelines_url": "https://assets.uber.com/d/k4nuxdZ8MC7E/user-guide#/user-guide/terms-of-use"
+    },
+    {
+      "service_name": "Ubuntu",
+      "icon_title": "Ubuntu",
+      "icon_slug": "ubuntu",
+      "source_url": "https://design.ubuntu.com/resources",
+      "guidelines_url": "https://design.ubuntu.com/brand"
+    },
+    {
+      "service_name": "Udemy",
+      "icon_title": "Udemy",
+      "icon_slug": "udemy",
+      "source_url": "https://udemy.com",
+      "guidelines_url": "https://support.udemy.com/hc/en-us/articles/8926753692567-Trademark-Usage-Guidelines"
+    },
+    {
+      "service_name": "UFC",
+      "icon_title": "UFC",
+      "icon_slug": "ufc",
+      "source_url": "https://www.ufc.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Ultralytics",
+      "icon_title": "Ultralytics",
+      "icon_slug": "ultralytics",
+      "source_url": "https://www.ultralytics.com",
+      "guidelines_url": "https://www.ultralytics.com/brand"
+    },
+    {
+      "service_name": "Ulule",
+      "icon_title": "Ulule",
+      "icon_slug": "ulule",
+      "source_url": "https://ulule.frontify.com/d/EX3dK8qsXgqh/branding-guidelines",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "United Airlines",
+      "icon_title": "United Airlines",
+      "icon_slug": "unitedairlines",
+      "source_url": "https://www.united.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Untappd",
+      "icon_title": "Untappd",
+      "icon_slug": "untappd",
+      "source_url": "https://untappd.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "UPS",
+      "icon_title": "UPS",
+      "icon_slug": "ups",
+      "source_url": "https://www.ups.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Valorant",
+      "icon_title": "Valorant",
+      "icon_slug": "valorant",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Valorant_logo_-_black_color_version.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Venmo",
+      "icon_title": "Venmo",
+      "icon_slug": "venmo",
+      "source_url": "https://venmo.com/about/brand",
+      "guidelines_url": "https://venmo.com/about/brand"
+    },
+    {
+      "service_name": "Vercel",
+      "icon_title": "Vercel",
+      "icon_slug": "vercel",
+      "source_url": "https://vercel.com/geist/brands",
+      "guidelines_url": "https://vercel.com/geist/brands"
+    },
+    {
+      "service_name": "Viaplay",
+      "icon_title": "Viaplay",
+      "icon_slug": "viaplay",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Viaplay_Group.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Viber",
+      "icon_title": "Viber",
+      "icon_slug": "viber",
+      "source_url": "https://www.viber.com/brand-center",
+      "guidelines_url": "https://www.viber.com/brand-center"
+    },
+    {
+      "service_name": "Vimeo",
+      "icon_title": "Vimeo",
+      "icon_slug": "vimeo",
+      "source_url": "https://press.vimeo.com/brand-guidelines",
+      "guidelines_url": "https://press.vimeo.com/brand-guidelines"
+    },
+    {
+      "service_name": "Vinted",
+      "icon_title": "Vinted",
+      "icon_slug": "vinted",
+      "source_url": "https://www.vinted.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Virgin Atlantic",
+      "icon_title": "Virgin Atlantic",
+      "icon_slug": "virginatlantic",
+      "source_url": "https://www.virginatlantic.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Virgin Media",
+      "icon_title": "Virgin Media",
+      "icon_slug": "virginmedia",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Virgin_Media.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Visa",
+      "icon_title": "Visa",
+      "icon_slug": "visa",
+      "source_url": "https://merchantsignageeu.visa.com/product.asp?dptID=696",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Vodafone",
+      "icon_title": "Vodafone",
+      "icon_slug": "vodafone",
+      "source_url": "https://web.vodafone.com.eg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Volvo",
+      "icon_title": "Volvo",
+      "icon_slug": "volvo",
+      "source_url": "https://www.media.volvocars.com/global/en-gb/logos",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Vonage",
+      "icon_title": "Vonage",
+      "icon_slug": "vonage",
+      "source_url": "https://www.vonage.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Vox",
+      "icon_title": "VOX",
+      "icon_slug": "vox",
+      "source_url": "https://commons.wikimedia.org/wiki/File:VOX_Logo_2013.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "VOX",
+      "icon_title": "VOX",
+      "icon_slug": "vox",
+      "source_url": "https://commons.wikimedia.org/wiki/File:VOX_Logo_2013.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "VRChat",
+      "icon_title": "VRChat",
+      "icon_slug": "vrchat",
+      "source_url": "https://hello.vrchat.com/press",
+      "guidelines_url": "https://hello.vrchat.com/press"
+    },
+    {
+      "service_name": "Wattpad",
+      "icon_title": "Wattpad",
+      "icon_slug": "wattpad",
+      "source_url": "https://company.wattpad.com/brandguideline",
+      "guidelines_url": "https://company.wattpad.com/brandguideline"
+    },
+    {
+      "service_name": "Waze",
+      "icon_title": "Waze",
+      "icon_slug": "waze",
+      "source_url": "https://www.waze.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "WEB.DE",
+      "icon_title": "WEB.DE",
+      "icon_slug": "webdotde",
+      "source_url": "https://web.de",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Webex",
+      "icon_title": "Webex",
+      "icon_slug": "webex",
+      "source_url": "https://github.com/momentum-design/momentum-ui/blob/970c5bec962a3f72e17e0b7ed69f2c38d298c405/icons-rebrand/svg/webex-helix-filled.svg",
+      "guidelines_url": "https://resources.webex.com/webex/brand-exchange-collection"
+    },
+    {
+      "service_name": "Webflow",
+      "icon_title": "Webflow",
+      "icon_slug": "webflow",
+      "source_url": "https://brand-at.webflow.io/resources#logos",
+      "guidelines_url": "https://brand-at.webflow.io"
+    },
+    {
+      "service_name": "Webtoon",
+      "icon_title": "WEBTOON",
+      "icon_slug": "webtoon",
+      "source_url": "https://webtoons.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "WeChat",
+      "icon_title": "WeChat",
+      "icon_slug": "wechat",
+      "source_url": "https://wechat.design/tool/brand",
+      "guidelines_url": "https://wechat.design/brand/main-brand"
+    },
+    {
+      "service_name": "Wemo",
+      "icon_title": "WEMO",
+      "icon_slug": "wemo",
+      "source_url": "https://commons.wikimedia.org/wiki/File:WeMoApp.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Western Union",
+      "icon_title": "Western Union",
+      "icon_slug": "westernunion",
+      "source_url": "https://www.westernunion.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "WeTransfer",
+      "icon_title": "WeTransfer",
+      "icon_slug": "wetransfer",
+      "source_url": "https://wetransfer.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Whatsapp",
+      "icon_title": "WhatsApp",
+      "icon_slug": "whatsapp",
+      "source_url": "https://about.meta.com/brand/resources/whatsapp/whatsapp-brand",
+      "guidelines_url": "https://about.meta.com/brand/resources/whatsapp/whatsapp-brand"
+    },
+    {
+      "service_name": "Wikipedia",
+      "icon_title": "Wikipedia",
+      "icon_slug": "wikipedia",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wikipedia-logo-v2.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Wire",
+      "icon_title": "Wire",
+      "icon_slug": "wire",
+      "source_url": "https://brand.wire.com",
+      "guidelines_url": "https://brand.wire.com"
+    },
+    {
+      "service_name": "Wise",
+      "icon_title": "Wise",
+      "icon_slug": "wise",
+      "source_url": "https://wise.design/foundations/logo",
+      "guidelines_url": "https://wise.design/foundations/logo"
+    },
+    {
+      "service_name": "Wish",
+      "icon_title": "Wish",
+      "icon_slug": "wish",
+      "source_url": "https://wish.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Wix",
+      "icon_title": "Wix",
+      "icon_slug": "wix",
+      "source_url": "https://www.wix.com/about/design-assets",
+      "guidelines_url": "https://www.wix.com/about/design-assets"
+    },
+    {
+      "service_name": "Wizz Air",
+      "icon_title": "Wizz Air",
+      "icon_slug": "wizzair",
+      "source_url": "https://wizzair.com/en-gb/information-and-services/about-us/press-office/logos",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "WP Engine",
+      "icon_title": "WP Engine",
+      "icon_slug": "wpengine",
+      "source_url": "https://wpengine.com/brand-assets",
+      "guidelines_url": "https://wpengine.com/brand-assets"
+    },
+    {
+      "service_name": "Wyze",
+      "icon_title": "Wyze",
+      "icon_slug": "wyze",
+      "source_url": "https://www.wyze.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Xero",
+      "icon_title": "Xero",
+      "icon_slug": "xero",
+      "source_url": "https://www.xero.com/uk/about/media/downloads",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Xing",
+      "icon_title": "Xing",
+      "icon_slug": "xing",
+      "source_url": "https://dev.xing.com/logo_rules",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Yelp",
+      "icon_title": "Yelp",
+      "icon_slug": "yelp",
+      "source_url": "https://www.yelp.com/brand",
+      "guidelines_url": "https://www.yelp.com/brand"
+    },
+    {
+      "service_name": "YouTube",
+      "icon_title": "YouTube",
+      "icon_slug": "youtube",
+      "source_url": "https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors",
+      "guidelines_url": "https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors"
+    },
+    {
+      "service_name": "YouTube Music",
+      "icon_title": "YouTube Music",
+      "icon_slug": "youtubemusic",
+      "source_url": "https://partnermarketinghub.withgoogle.com/#/brands",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Z.ai",
+      "icon_title": "Z.ai",
+      "icon_slug": "zdotai",
+      "source_url": "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Zabka",
+      "icon_title": "Żabka",
+      "icon_slug": "zabka",
+      "source_url": "https://www.zabka.pl",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Zalando",
+      "icon_title": "Zalando",
+      "icon_slug": "zalando",
+      "source_url": "https://www.zalando.co.uk",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Zap",
+      "icon_title": "ZAP",
+      "icon_slug": "zap",
+      "source_url": "https://www.zaproxy.org",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Zapier",
+      "icon_title": "Zapier",
+      "icon_slug": "zapier",
+      "source_url": "https://www.figma.com/file/NQFxTCE5pGR3dHZt0DkOyy/Zapier-Brand-Guidelines-%5BExternal%5D?type=design&node-id=101-9701&mode=design",
+      "guidelines_url": "https://www.figma.com/file/NQFxTCE5pGR3dHZt0DkOyy/Zapier-Brand-Guidelines-%5BExternal%5D?type=design&node-id=101-9701&mode=design"
+    },
+    {
+      "service_name": "ZDF",
+      "icon_title": "ZDF",
+      "icon_slug": "zdf",
+      "source_url": "https://www.zdf.de",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Zendesk",
+      "icon_title": "Zendesk",
+      "icon_slug": "zendesk",
+      "source_url": "https://brandland.zendesk.com",
+      "guidelines_url": "https://brandland.zendesk.com"
+    },
+    {
+      "service_name": "Zerodha",
+      "icon_title": "Zerodha",
+      "icon_slug": "zerodha",
+      "source_url": "https://zerodha.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Zerotier",
+      "icon_title": "ZeroTier",
+      "icon_slug": "zerotier",
+      "source_url": "https://www.zerotier.com",
+      "guidelines_url": "https://www.zerotier.com/media-kit"
+    },
+    {
+      "service_name": "Ziggo",
+      "icon_title": "Ziggo",
+      "icon_slug": "ziggo",
+      "source_url": "https://www.ziggosport.nl",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Zilch",
+      "icon_title": "Zilch",
+      "icon_slug": "zilch",
+      "source_url": "https://www.zilch.com",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Zoho",
+      "icon_title": "Zoho",
+      "icon_slug": "zoho",
+      "source_url": "https://www.zoho.com/branding",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "ZoHo",
+      "icon_title": "Zoho",
+      "icon_slug": "zoho",
+      "source_url": "https://www.zoho.com/branding",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Zomato",
+      "icon_title": "Zomato",
+      "icon_slug": "zomato",
+      "source_url": "https://www.zomato.com/business/apps",
+      "guidelines_url": ""
+    },
+    {
+      "service_name": "Zoom",
+      "icon_title": "Zoom",
+      "icon_slug": "zoom",
+      "source_url": "https://brand.zoom.us/media-library/",
+      "guidelines_url": "https://brand.zoom.us/usage-legal/"
+    },
+    {
+      "service_name": "ポケモン go",
+      "icon_title": "Go",
+      "icon_slug": "go",
+      "source_url": "https://blog.golang.org/go-brand",
+      "guidelines_url": "https://blog.golang.org/go-brand"
+    }
+  ]
+}
