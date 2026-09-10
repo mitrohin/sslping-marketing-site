@@ -82,6 +82,7 @@ jobs:
           printf 'DEPLOY_IMAGE=%s\n' "${deploy_image}" >> "${GITHUB_ENV}"
 
       - name: Deploy marketing site
+        id: deploy
         run: |
           set -euo pipefail
           test -n "${DEPLOY_IMAGE:-}"
@@ -91,8 +92,24 @@ jobs:
           kubectl -n sslping get gateway sslping-public \
             -o jsonpath='{range .spec.listeners[*]}{.name}{"\n"}{end}' \
             | grep -Fx regional
+          previous_image="$(kubectl -n sslping get deployment sslping-marketing-site --ignore-not-found -o jsonpath='{.spec.template.spec.containers[?(@.name=="marketing-site")].image}')"
+          printf 'PREVIOUS_MARKETING_IMAGE=%s\n' "${previous_image}" >> "${GITHUB_ENV}"
           sed "s|IMAGE_PLACEHOLDER|${DEPLOY_IMAGE}|g" deploy/kubernetes/marketing-site.yaml | kubectl apply -f -
           kubectl -n sslping rollout status deployment/sslping-marketing-site --timeout=5m
           kubectl -n sslping get deployment/sslping-marketing-site service/sslping-marketing-site \
             httproute/sslping-marketing-site httproute/sslping-marketing-www-redirect \
             httproute/sslping-marketing-regional httproute/sslping-marketing-regional-http-redirect
+
+      - name: Verify public HTTPS routes and status-page navigation
+        id: public_smoke
+        run: node scripts/smoke-production.mjs
+
+      - name: Restore previous image after failed rollout or smoke
+        if: failure() && (steps.deploy.outcome == 'failure' || steps.public_smoke.outcome == 'failure') && env.PREVIOUS_MARKETING_IMAGE != ''
+        env:
+          PREVIOUS_IMAGE: ${{ env.PREVIOUS_MARKETING_IMAGE }}
+        run: |
+          set -euo pipefail
+          kubectl -n sslping set image deployment/sslping-marketing-site marketing-site="${PREVIOUS_IMAGE}"
+          kubectl -n sslping rollout status deployment/sslping-marketing-site --timeout=5m
+          echo "Previous image restored. The release remains failed; review route changes separately."

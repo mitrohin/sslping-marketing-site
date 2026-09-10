@@ -1,17 +1,16 @@
-import { type CSSProperties, type FormEvent, useEffect, useMemo, useRef, useState } from 'react'
-import { catalogStats, getCatalogItems, getInitial, getServiceHue, getServiceMonogram } from './catalog'
-import { copy as localizedCopy, directionForLocale, type Copy } from './copy'
+import { type CSSProperties, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
+import { catalogWindow, getInitial, getServiceHue, getServiceMonogram, searchCatalog, SEARCH_PAGE_SIZE } from './catalog'
+import type { Copy } from './copy'
+import { interpolate, type PageData } from './page'
 import { Icon } from './Icon'
 import {
   getHreflang,
-  getRegion,
   getRegionFlag,
   getRegionName,
   getRegionUrl,
   PRIMARY_REGION_CODE,
   regions,
   sourceRegions,
-  type RegionConfig,
 } from './regions'
 
 const DASHBOARD_BASE_URL = (
@@ -22,56 +21,12 @@ const DASHBOARD_BASE_URL = (
 const DASHBOARD_LOGIN_URL = `${DASHBOARD_BASE_URL}/login`
 const DASHBOARD_REGISTER_URL = `${DASHBOARD_BASE_URL}/register`
 
-function interpolate(template: string, values: Record<string, string | number>): string {
-  return Object.entries(values).reduce(
-    (result, [key, value]) => result.replaceAll(`{${key}}`, String(value)),
-    template,
-  )
-}
-
-function normalizedSearch(value: string, locale: string): string {
-  return value.trim().toLocaleLowerCase(locale).normalize('NFKD')
-}
-
 function formatNumber(value: number): string {
   // Keep the server-rendered and hydrated value byte-for-byte identical. ICU
   // data differs between the Node and Chromium runtimes for some numbering
   // systems (notably Arabic), so use an explicit, readable grouping format.
   return String(value).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 }
-
-export function getPageData(regionCode: string) {
-  const region = getRegion(regionCode)
-  const localeCopy = localizedCopy[region.locale]
-  const regionName = getRegionName(region)
-  const items = getCatalogItems(region)
-  const title = `${interpolate(localeCopy.catalog.title, { region: regionName })} | SSLPing`
-  const description = interpolate(localeCopy.hero.description, { region: regionName })
-  const canonical = getRegionUrl(region.code)
-  const alternates = [
-    ...regions.map((alternateRegion) => ({
-      hreflang: getHreflang(alternateRegion),
-      url: getRegionUrl(alternateRegion.code),
-    })),
-    { hreflang: 'x-default', url: getRegionUrl(PRIMARY_REGION_CODE) },
-  ]
-
-  return {
-    region,
-    locale: region.locale,
-    direction: directionForLocale(region.locale),
-    copy: localeCopy,
-    regionName,
-    items,
-    title,
-    description,
-    canonical,
-    alternates,
-    ogLocale: getHreflang(region).replaceAll('-', '_'),
-  }
-}
-
-type PageData = ReturnType<typeof getPageData>
 
 function Brand() {
   return (
@@ -187,15 +142,10 @@ function Header({ page }: { page: PageData }) {
   )
 }
 
-function Hero({ page, query, setQuery }: { page: PageData; query: string; setQuery: (value: string) => void }) {
-  function submit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    document.getElementById('directory')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
-
+function Hero({ page }: { page: PageData }) {
   const metrics = [
     [formatNumber(page.items.length), page.copy.metrics.services],
-    [formatNumber(catalogStats.statusPages), page.copy.metrics.statusPages],
+    [formatNumber(page.stats.statusPages), page.copy.metrics.statusPages],
     ['4', page.copy.metrics.checkLocations],
   ]
 
@@ -207,20 +157,10 @@ function Hero({ page, query, setQuery }: { page: PageData; query: string; setQue
           <p className="eyebrow eyebrow--dark"><span className="eyebrow-pulse" />{page.copy.hero.eyebrow}</p>
           <h1>{interpolate(page.copy.hero.title, { region: page.regionName })}</h1>
           <p className="hero-description">{interpolate(page.copy.hero.description, { region: page.regionName })}</p>
-          <form className="hero-search" role="search" onSubmit={submit}>
-            <label className="sr-only" htmlFor="hero-search">{page.copy.hero.searchLabel}</label>
-            <Icon name="search" />
-            <input
-              id="hero-search"
-              type="search"
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder={page.copy.hero.searchPlaceholder}
-              autoComplete="off"
-              enterKeyHint="search"
-            />
-            <button className="button button--dark hero-search-button" type="submit">{page.copy.hero.searchButton}<Icon name="arrow" /></button>
-          </form>
+          <div className="hero-actions">
+            <a className="button button--dark" href="#directory" onClick={() => document.getElementById('directory-search')?.focus({ preventScroll: true })}>{page.copy.nav.directory}<Icon name="search" /></a>
+            <a className="button button--outline" href={DASHBOARD_REGISTER_URL}>{page.copy.product.primary}<Icon name="arrow" /></a>
+          </div>
           <p className="trust-note"><Icon name="shield" />{page.copy.hero.trustNote}</p>
           <dl className="hero-metrics">
             {metrics.map(([value, label]) => (
@@ -314,19 +254,27 @@ function Directory({ page, query, setQuery }: { page: PageData; query: string; s
     ))
   ), [page.items, page.locale])
 
-  const filtered = useMemo(() => {
-    const needle = normalizedSearch(query, page.locale)
-    return page.items.filter((item) => {
-      const matchesLetter = letter === 'ALL' || getInitial(item.name) === letter
-      if (!matchesLetter) return false
-      if (!needle) return true
-      return normalizedSearch(`${item.name} ${item.hostname}`, page.locale).includes(needle)
-    })
-  }, [letter, page.items, page.locale, query])
+  const deferredQuery = useDeferredValue(query)
+  const [windowState, setWindowState] = useState({ query: '', letter: 'ALL', limit: SEARCH_PAGE_SIZE })
+  const filtered = useMemo(() => searchCatalog(page.items, deferredQuery, letter, page.locale), [letter, page.items, page.locale, deferredQuery])
+  const isFiltered = Boolean(deferredQuery.trim()) || letter !== 'ALL'
+  const limit = windowState.query === deferredQuery && windowState.letter === letter ? windowState.limit : SEARCH_PAGE_SIZE
+  const visible = catalogWindow(filtered, isFiltered, limit)
+
+  function changeQuery(value: string) {
+    setQuery(value)
+    setWindowState({ query: value, letter, limit: SEARCH_PAGE_SIZE })
+  }
+
+  function changeLetter(value: string) {
+    setLetter(value)
+    setWindowState({ query, letter: value, limit: SEARCH_PAGE_SIZE })
+  }
 
   function clearFilters() {
     setQuery('')
     setLetter('ALL')
+    setWindowState({ query: '', letter: 'ALL', limit: SEARCH_PAGE_SIZE })
   }
 
   return (
@@ -345,13 +293,14 @@ function Directory({ page, query, setQuery }: { page: PageData; query: string; s
             <span className="sr-only">{page.copy.catalog.searchLabel}</span>
             <Icon name="search" />
             <input
+              id="directory-search"
               type="search"
               value={query}
-              onChange={(event) => setQuery(event.target.value)}
+              onChange={(event) => changeQuery(event.target.value)}
               placeholder={page.copy.hero.searchPlaceholder}
               autoComplete="off"
             />
-            {query && <button type="button" onClick={() => setQuery('')} aria-label={page.copy.catalog.clear}><Icon name="close" /></button>}
+            {query && <button type="button" onClick={() => changeQuery('')} aria-label={page.copy.catalog.clear}><Icon name="close" /></button>}
           </label>
           <p role="status" aria-live="polite">
             {interpolate(
@@ -361,20 +310,28 @@ function Directory({ page, query, setQuery }: { page: PageData; query: string; s
           </p>
         </div>
         <div className="letter-filter" role="group" aria-label={page.copy.catalog.filterLabel}>
-          <button className={letter === 'ALL' ? 'is-active' : ''} type="button" aria-pressed={letter === 'ALL'} onClick={() => setLetter('ALL')}>{page.copy.catalog.all}</button>
+          <button className={letter === 'ALL' ? 'is-active' : ''} type="button" aria-pressed={letter === 'ALL'} onClick={() => changeLetter('ALL')}>{page.copy.catalog.all}</button>
           {initials.map((initial) => (
-            <button className={letter === initial ? 'is-active' : ''} key={initial} type="button" aria-pressed={letter === initial} onClick={() => setLetter(initial)}>{initial}</button>
+            <button className={letter === initial ? 'is-active' : ''} key={initial} type="button" aria-pressed={letter === initial} onClick={() => changeLetter(initial)}>{initial}</button>
           ))}
         </div>
         {filtered.length > 0 ? (
-          <ul className="service-grid">
-            {filtered.map((item) => <ServiceCard key={`${item.serviceId}:${item.statusCountry}`} item={item} copy={page.copy} global={!page.region.sourceAvailable} />)}
+          <ul className="service-grid" aria-busy={query !== deferredQuery}>
+            {visible.map((item) => <ServiceCard key={`${item.serviceId}:${item.statusCountry}`} item={item} copy={page.copy} global={!page.region.sourceAvailable} />)}
           </ul>
         ) : (
           <div className="empty-state">
             <span><Icon name="search" /></span>
             <h3>{page.copy.catalog.noResults}</h3>
             <button className="button button--dark" type="button" onClick={clearFilters}>{page.copy.catalog.clear}</button>
+          </div>
+        )}
+        {isFiltered && filtered.length > 0 && (
+          <div className="directory-pagination">
+            <p role="status">{interpolate(page.experience.showing, { shown: formatNumber(visible.length), total: formatNumber(filtered.length) })}</p>
+            {visible.length < filtered.length && (
+              <button className="button button--dark" type="button" onClick={() => setWindowState({ query: deferredQuery, letter, limit: limit + SEARCH_PAGE_SIZE })}>{page.experience.showMore}</button>
+            )}
           </div>
         )}
       </div>
@@ -415,7 +372,7 @@ function Regions({ page }: { page: PageData }) {
       <div className="container">
         <div className="regions-heading">
           <SectionIntro eyebrow={page.copy.regions.eyebrow} title={page.copy.regions.title} body={page.copy.regions.body} />
-          <div className="region-count"><strong>{catalogStats.regions}</strong><span>{page.copy.nav.regions}</span></div>
+          <div className="region-count"><strong>{page.stats.regions}</strong><span>{page.copy.nav.regions}</span></div>
         </div>
         <nav className="region-grid" aria-label={page.copy.regionSelectorLabel}>
           {sortedRegions.map((region) => {
@@ -455,6 +412,7 @@ function Product({ page }: { page: PageData }) {
             <a className="button button--lime" href={DASHBOARD_REGISTER_URL}>{page.copy.product.primary}<Icon name="arrow" /></a>
             <a className="button button--outline-light" href={DASHBOARD_LOGIN_URL}>{page.copy.product.secondary}</a>
           </div>
+          <p className="product-plan-note">{page.experience.planNote}</p>
         </div>
         <div className="product-visual" aria-hidden="true">
           <div className="visual-window-bar"><span /><span /><span /><em>dashboard.sslping.io</em></div>
@@ -573,8 +531,7 @@ function StructuredData({ page }: { page: PageData }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serialized }} />
 }
 
-export default function App({ initialRegionCode }: { initialRegionCode: string }) {
-  const page = useMemo(() => getPageData(initialRegionCode), [initialRegionCode])
+export default function App({ page }: { page: PageData }) {
   const [query, setQuery] = useState('')
 
   useEffect(() => {
@@ -589,7 +546,7 @@ export default function App({ initialRegionCode }: { initialRegionCode: string }
       <a className="skip-link" href="#directory">{page.copy.skipLink}</a>
       <Header page={page} />
       <main>
-        <Hero page={page} query={query} setQuery={setQuery} />
+        <Hero page={page} />
         <Directory page={page} query={query} setQuery={setQuery} />
         <HowItWorks page={page} />
         <Regions page={page} />

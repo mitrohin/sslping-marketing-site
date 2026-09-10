@@ -1,4 +1,5 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { createHash } from 'node:crypto'
 import { resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
 
@@ -45,12 +46,14 @@ function renderHead(page) {
   ].join('\n')
 }
 
-function renderDocument(page, html) {
+function renderDocument(page, html, payload, regionalPayloads) {
+  const bootstrap = JSON.stringify({ payload, regions: regionalPayloads }).replaceAll('<', '\\u003c')
   return template
     .replace('<html lang="en" dir="ltr" data-region="GLOBAL">', `<html lang="${escapeAttribute(page.locale)}" dir="${escapeAttribute(page.direction)}" data-region="${escapeAttribute(page.region.code)}">`)
     .replace('    <!--app-head-->', renderHead(page))
     .replace('<title>SSLPing Public Status Directory</title>', `<title>${escapeAttribute(page.title)}</title>`)
     .replace('<!--app-html-->', html)
+    .replace('</body>', `    <script id="directory-data" type="application/json">${bootstrap}</script>\n  </body>`)
 }
 
 function renderSitemap(page) {
@@ -59,13 +62,24 @@ function renderSitemap(page) {
 
 await mkdir(resolve(distDirectory, 'regions'), { recursive: true })
 await mkdir(resolve(distDirectory, 'sitemaps'), { recursive: true })
+await mkdir(resolve(distDirectory, 'assets', 'catalog'), { recursive: true })
 
-for (const regionCode of serverEntry.regionCodes) {
-  const { html, page } = serverEntry.render(regionCode)
+const pages = serverEntry.regionCodes.map((regionCode) => serverEntry.render(regionCode))
+const regionalPayloads = {}
+for (const { page } of pages) {
+  const json = JSON.stringify(serverEntry.encodePage(page))
+  const hash = createHash('sha256').update(json).digest('hex').slice(0, 16)
+  const path = `/assets/catalog/${page.region.code.toLowerCase()}-${hash}.json`
+  regionalPayloads[page.region.code] = path
+  await writeFile(resolve(distDirectory, path.slice(1)), json)
+}
+
+for (const { html, page } of pages) {
+  const regionCode = page.region.code
   const destination = regionCode === 'GLOBAL'
     ? resolve(distDirectory, 'index.html')
     : resolve(distDirectory, 'regions', regionCode.toLowerCase(), 'index.html')
   await mkdir(resolve(destination, '..'), { recursive: true })
-  await writeFile(destination, renderDocument(page, html))
+  await writeFile(destination, renderDocument(page, html, serverEntry.encodePage(page), regionalPayloads))
   await writeFile(resolve(distDirectory, 'sitemaps', `${regionCode.toLowerCase()}.xml`), renderSitemap(page))
 }

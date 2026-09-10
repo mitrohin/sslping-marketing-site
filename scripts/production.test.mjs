@@ -254,3 +254,103 @@ test('the vendored catalog snapshot keeps the expected production scale', async 
   assert.equal(expectedCountryCodes.length, 55)
   assert.match(rows[0], /catalog_id,service_id$/)
 })
+
+function directoryBootstrap(html) {
+  const match = html.match(/<script id="directory-data" type="application\/json">([\s\S]*?)<\/script>/)
+  assert.ok(match, 'interactive page must contain its regional data')
+  return JSON.parse(match[1])
+}
+
+const directoryRuntime = import('../.ssr/entry-server.js')
+
+test('each page embeds only its regional catalog and matching localized payload', async () => {
+  const { decodePage, normalizedSearch } = await directoryRuntime
+  const locales = new Set()
+  for (const country of ['global', ...expectedCountryCodes]) {
+    const location = country === 'global' ? 'index.html' : `regions/${country}/index.html`
+    const html = await readFile(new URL(location, dist), 'utf8')
+    const { payload, regions } = directoryBootstrap(html)
+    const page = decodePage(payload)
+    assert.equal(page.region.code, country.toUpperCase())
+    assert.equal(page.items.length, (html.match(/class="service-card"/g) ?? []).length, 'all regional cards remain crawlable before JavaScript')
+    assert.ok(page.items.length > 0)
+    assert.equal(Object.keys(regions).length, 56)
+    assert.ok(page.experience.showMore && page.experience.showing.includes('{shown}') && page.experience.showing.includes('{total}'))
+    assert.ok(page.experience.planNote.length > 30)
+    locales.add(page.locale)
+    for (const item of page.items) {
+      if (country !== 'global') assert.equal(item.statusCountry.toLowerCase(), country)
+      assert.equal(item.searchText, normalizedSearch(`${item.name} ${item.hostname}`, page.locale))
+      assert.ok(html.includes(`href="${item.statusUrl}"`))
+    }
+  }
+  assert.equal(locales.size, 31)
+})
+
+test('regional preview data has immutable hashed URLs and exactly matches embedded content', async () => {
+  const root = directoryBootstrap(await readFile(new URL('index.html', dist), 'utf8'))
+  for (const [code, path] of Object.entries(root.regions)) {
+    assert.match(path, /^\/assets\/catalog\/[a-z]+-[a-f0-9]{16}\.json$/)
+    const json = await readFile(new URL(path.slice(1), dist), 'utf8')
+    const hash = createHash('sha256').update(json).digest('hex').slice(0, 16)
+    assert.ok(path.endsWith(`-${hash}.json`))
+    const location = code === 'GLOBAL' ? 'index.html' : `regions/${code.toLowerCase()}/index.html`
+    const embedded = directoryBootstrap(await readFile(new URL(location, dist), 'utf8'))
+    assert.deepEqual(JSON.parse(json), embedded.payload)
+    assert.deepEqual(embedded.regions, root.regions)
+  }
+})
+
+test('client no longer ships the CSV or other regional copy and stays within its bundle budget', async () => {
+  const files = (await readdir(new URL('assets/', dist))).filter((name) => name.endsWith('.js'))
+  const buffers = await Promise.all(files.map((name) => readFile(new URL(`assets/${name}`, dist))))
+  const javascript = buffers.map(String).join('\n')
+  assert.doesNotMatch(javascript, /follow_redirects,validate_tls,source,countries,catalog_id,service_id/)
+  assert.doesNotMatch(javascript, /Eine eigene US-Datenquelle|Una fuente dedicada para Estados Unidos|A dedicated US source is not yet available/)
+  assert.ok(buffers.reduce((sum, buffer) => sum + buffer.length, 0) < 250_000, 'initial JS budget is 250 kB including React')
+})
+
+test('the landing page has one search and clear directory and product actions', async () => {
+  const html = await readFile(new URL('index.html', dist), 'utf8')
+  assert.equal((html.match(/type="search"/g) ?? []).length, 1)
+  assert.match(html, /id="directory-search"/)
+  assert.match(html, /Website and service status worldwide/)
+  assert.doesNotMatch(html, /\bin Global\b/)
+  assert.match(html, /class="hero-actions"[\s\S]*?href="#directory"[\s\S]*?href="https:\/\/dashboard\.sslping\.io\/register"/)
+  assert.match(html, /review current plans and limits in workspace billing after signing in/)
+})
+
+test('prepared search handles accents, locale casing, hostnames and letter filtering', async () => {
+  const { searchCatalog, normalizedSearch, decodePage } = await directoryRuntime
+  const { payload } = directoryBootstrap(await readFile(new URL('index.html', dist), 'utf8'))
+  const page = decodePage(payload)
+  const service = page.items.find((item) => item.name.startsWith('A'))
+  assert.ok(service)
+  assert.ok(searchCatalog(page.items, service.hostname, 'ALL', page.locale).includes(service))
+  assert.deepEqual(searchCatalog(page.items, service.hostname, 'Z', page.locale), [])
+  assert.equal(searchCatalog(page.items, 'this-service-does-not-exist.invalid', 'ALL', page.locale).length, 0)
+  const accented = { ...service, name: 'Café İstanbul', hostname: 'cafe.example', searchText: normalizedSearch('Café İstanbul cafe.example', 'tr') }
+  assert.deepEqual(searchCatalog([accented], 'cafe istanbul', 'ALL', 'tr'), [accented])
+  assert.deepEqual(searchCatalog([accented], 'CAFE.EXAMPLE', 'C', 'tr'), [accented])
+})
+
+test('filtered results grow in bounded batches without truncating the unfiltered crawlable directory', async () => {
+  const { catalogWindow, SEARCH_PAGE_SIZE, decodePage } = await directoryRuntime
+  const { payload } = directoryBootstrap(await readFile(new URL('regions/gb/index.html', dist), 'utf8'))
+  const { items } = decodePage(payload)
+  assert.ok(items.length > 120)
+  assert.equal(SEARCH_PAGE_SIZE, 60)
+  assert.deepEqual(catalogWindow(items, true), items.slice(0, 60))
+  assert.deepEqual(catalogWindow(items, true, 120), items.slice(0, 120))
+  assert.deepEqual(catalogWindow(items.slice(0, 61), true, 120), items.slice(0, 61))
+  assert.deepEqual(catalogWindow(items, false), items)
+  assert.deepEqual(catalogWindow([], true), [])
+})
+
+test('browser telemetry CSP permits the exact first-party API origin', async () => {
+  const headers = await readFile(new URL('../deploy/nginx/security-headers.inc', import.meta.url), 'utf8')
+  const connect = headers.match(/connect-src ([^;]+);/)?.[1]
+  assert.ok(connect)
+  assert.ok(connect.split(/\s+/).includes('https://api.sslping.io'))
+  assert.doesNotMatch(connect, /(?:^|\s)(?:\*|https:)(?:\s|$)/)
+})
