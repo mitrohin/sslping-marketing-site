@@ -9,7 +9,7 @@ ARG VITE_DASHBOARD_URL=https://dashboard.sslping.io
 ENV VITE_DASHBOARD_URL=${VITE_DASHBOARD_URL}
 RUN npm run build
 
-FROM nginxinc/nginx-unprivileged:1.30.4-alpine
+FROM nginxinc/nginx-unprivileged:1.31.6-alpine
 COPY --chown=101:101 deploy/nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY --chown=101:101 deploy/nginx/security-headers.inc /etc/nginx/conf.d/security-headers.inc
 COPY --from=build --chown=101:101 /app/dist /usr/share/nginx/html
