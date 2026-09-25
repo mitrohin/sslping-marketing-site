@@ -1,6 +1,6 @@
 import type { Locale } from './copy'
 
-export interface ExperienceCopy { showMore: string; showing: string; planNote: string }
+export interface ExperienceCopy { showMore: string; showing: string; planNote: string; demoLabel: string }
 
 // Kept with the regional page payload so the browser receives one language.
 const messages: Record<Locale, readonly [string, string, string]> = {
@@ -37,4 +37,18 @@ const messages: Record<Locale, readonly [string, string, string]> = {
   'zh-Hant': ['顯示更多', '顯示 {total} 筆結果中的 {shown} 筆', '無需帳戶即可瀏覽目錄。如需監控自己的服務，請登入後在工作區的帳務頁面查看目前方案及限制。'],
 }
 
-export const experienceCopy = Object.fromEntries(Object.entries(messages).map(([locale, [showMore, showing, planNote]]) => [locale, { showMore, showing, planNote }])) as Record<Locale, ExperienceCopy>
+const demoLabels: Record<Locale, string> = {
+  en: 'Interface example · sample data', ar: 'مثال للواجهة · بيانات تجريبية', cs: 'Ukázka rozhraní · vzorová data',
+  da: 'Eksempel på grænsefladen · eksempeldata', de: 'Oberflächenbeispiel · Beispieldaten', el: 'Παράδειγμα διεπαφής · ενδεικτικά δεδομένα',
+  es: 'Ejemplo de interfaz · datos de muestra', fi: 'Käyttöliittymäesimerkki · esimerkkitiedot', fil: 'Halimbawa ng interface · halimbawang datos',
+  fr: 'Exemple d’interface · données fictives', he: 'דוגמת ממשק · נתונים לדוגמה', hi: 'इंटरफ़ेस का उदाहरण · नमूना डेटा',
+  hr: 'Primjer sučelja · ogledni podaci', hu: 'Felületi példa · mintaadatok', id: 'Contoh antarmuka · data contoh',
+  it: 'Esempio di interfaccia · dati dimostrativi', ja: '画面例 · サンプルデータ', ms: 'Contoh antara muka · data contoh',
+  nl: 'Interfacevoorbeeld · voorbeeldgegevens', no: 'Grensesnitteksempel · eksempeldata', pl: 'Przykład interfejsu · dane przykładowe',
+  pt: 'Exemplo de interface · dados de exemplo', ro: 'Exemplu de interfață · date demonstrative', sk: 'Ukážka rozhrania · vzorové údaje',
+  sl: 'Primer vmesnika · vzorčni podatki', sr: 'Пример интерфејса · пробни подаци', sv: 'Gränssnittsexempel · exempeldata',
+  tr: 'Arayüz örneği · örnek veriler', uk: 'Приклад інтерфейсу · демонстраційні дані', ur: 'انٹرفیس کی مثال · نمونہ ڈیٹا',
+  'zh-Hant': '介面範例 · 示範資料',
+}
+
+export const experienceCopy = Object.fromEntries(Object.entries(messages).map(([locale, [showMore, showing, planNote]]) => [locale, { showMore, showing, planNote, demoLabel: demoLabels[locale as Locale] }])) as Record<Locale, ExperienceCopy>

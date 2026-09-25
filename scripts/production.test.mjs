@@ -354,3 +354,64 @@ test('browser telemetry CSP permits the exact first-party API origin', async () 
   assert.ok(connect.split(/\s+/).includes('https://api.sslping.io'))
   assert.doesNotMatch(connect, /(?:^|\s)(?:\*|https:)(?:\s|$)/)
 })
+
+test('legal documents have real SSR routes, metadata and separate contact links without client bootstrap', async () => {
+  const nginx = await readFile(new URL('deploy/nginx/default.conf', project), 'utf8')
+  const sitemap = await readFile(new URL('sitemaps/global.xml', dist), 'utf8')
+  for (const language of ['en', 'ru']) {
+    for (const kind of ['privacy', 'terms']) {
+      const path = `/${language === 'ru' ? 'ru/' : ''}${kind}`
+      const html = await readFile(new URL(`${path.slice(1)}/index.html`, dist), 'utf8')
+      assert.match(html, new RegExp(`<html lang="${language}" dir="ltr">`))
+      assert.ok(html.includes(`<link rel="canonical" href="https://sslping.io${path}"`))
+      assert.match(html, /<main[^>]*>[\s\S]*<h1>/)
+      assert.match(html, /aria-label="(?:Document language|Язык документа)"/)
+      assert.ok(html.includes(`href="mailto:${kind === 'privacy' ? 'privacy' : 'legal'}@sslping.io"`))
+      assert.doesNotMatch(html, /type="module"|rel="modulepreload"|id="directory-data"|class="service-card"/)
+      assert.ok(sitemap.includes(`<loc>https://sslping.io${path}</loc>`))
+      const block = nginx.split(`location = ${path} {`)[1]?.split('}')[0]
+      assert.ok(block, `${path} must not hit the production catch-all 404`)
+      assert.ok(block.includes(`try_files ${path}/index.html =404;`))
+      assert.match(block, /include \/etc\/nginx\/conf\.d\/security-headers\.inc;/)
+      assert.match(block, /Cache-Control "no-cache, max-age=0, must-revalidate" always;/)
+    }
+  }
+  for (const country of ['GLOBAL', 'AE', 'TR']) {
+    const html = await readFile(new URL(country === 'GLOBAL' ? 'index.html' : `regions/${country.toLowerCase()}/index.html`, dist), 'utf8')
+    assert.match(html, /href="\/privacy"/)
+    assert.match(html, /href="\/terms"/)
+    assert.doesNotMatch(html, /href="mailto:(privacy|legal)@sslping\.io"/)
+  }
+})
+
+test('search retains one named custom clear control and suppresses the browser duplicate', async () => {
+  const source = await readFile(new URL('src/App.tsx', project), 'utf8')
+  const assets = (await readdir(new URL('assets/', dist))).filter((file) => file.endsWith('.css'))
+  const css = (await Promise.all(assets.map((file) => readFile(new URL(`assets/${file}`, dist), 'utf8')))).join('\n')
+  assert.match(source, /type="search"/)
+  assert.match(source, /aria-label=\{[^}]*\.clear\}/)
+  assert.match(css, /\.directory-search input\[type=["']?search["']?\]::-webkit-search-cancel-button\{[^}]*appearance:none/)
+})
+
+test('all regional illustrations visibly label fixed metrics as sample data', async () => {
+  for (const country of ['global', ...expectedCountryCodes]) {
+    const html = await readFile(new URL(country === 'global' ? 'index.html' : `regions/${country}/index.html`, dist), 'utf8')
+    const bootstrap = JSON.parse(html.match(/<script id="directory-data" type="application\/json">([\s\S]*?)<\/script>/)[1])
+    const label = bootstrap.payload.page.experience.demoLabel
+    assert.ok(label?.trim(), `${country} needs a localized example label`)
+    assert.equal((html.match(/class="illustration-label"/g) ?? []).length, 2)
+    assert.ok(html.includes(label))
+  }
+})
+
+test('document copy distinguishes bounded telemetry from security and enriched report data', async () => {
+  const en = await readFile(new URL('privacy/index.html', dist), 'utf8')
+  const ru = await readFile(new URL('ru/privacy/index.html', dist), 'utf8')
+  assert.match(en, /IP address and browser information/)
+  assert.match(en, /approximate location \(including city or coordinates\)/)
+  assert.match(en, /Cloudflare Turnstile/)
+  assert.match(ru, /IP-адрес и сведения о браузере/)
+  assert.match(ru, /включая город или координаты/)
+  const terms = await readFile(new URL('terms/index.html', dist), 'utf8')
+  assert.match(terms, /does not create an uptime guarantee or a contractual SLA/)
+})

@@ -13,6 +13,21 @@ interface Bootstrap { payload: PagePayload; regions: Record<string, string> }
 async function start() {
   const root = document.getElementById('root')
   if (!root) throw new Error('Missing application root')
+  // Published legal documents are static HTML. This branch also supports Vite development previews.
+  if (import.meta.env.DEV) {
+    const legalRoute = window.location.pathname.match(/^\/(ru\/)?(privacy|terms)\/?$/)
+    if (legalRoute) {
+      const { LegalPage, legalDocument } = await import('./LegalPage')
+      const language = legalRoute[1] ? 'ru' : 'en'
+      const kind = legalRoute[2] as 'privacy' | 'terms'
+      document.documentElement.lang = language
+      document.documentElement.dir = 'ltr'
+      document.title = legalDocument(kind, language).title
+      createRoot(root).render(<LegalPage kind={kind} language={language} />)
+      return
+    }
+  }
+
   const localPreview = ['localhost', '127.0.0.1'].includes(window.location.hostname)
   const previewRegion = localPreview ? new URLSearchParams(window.location.search).get('region') : null
   const region = getRegion(previewRegion ?? document.documentElement.dataset.region)

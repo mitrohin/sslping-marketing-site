@@ -169,6 +169,7 @@ function Hero({ page }: { page: PageData }) {
           </dl>
         </div>
         <div className="network-card" aria-hidden="true">
+          <p className="illustration-label">{page.experience.demoLabel}</p>
           <div className="network-card-head">
             <span><i />SSLPing</span>
             <strong>05:00</strong>
@@ -247,6 +248,7 @@ function ServiceCard({ item, copy, global }: { item: PageData['items'][number]; 
 }
 
 function Directory({ page, query, setQuery }: { page: PageData; query: string; setQuery: (value: string) => void }) {
+  const searchInput = useRef<HTMLInputElement>(null)
   const [letter, setLetter] = useState('ALL')
   const initials = useMemo(() => (
     [...new Set(page.items.map((item) => getInitial(item.name)))].sort((left, right) => (
@@ -275,6 +277,7 @@ function Directory({ page, query, setQuery }: { page: PageData; query: string; s
     setQuery('')
     setLetter('ALL')
     setWindowState({ query: '', letter: 'ALL', limit: SEARCH_PAGE_SIZE })
+    searchInput.current?.focus()
   }
 
   return (
@@ -289,19 +292,20 @@ function Directory({ page, query, setQuery }: { page: PageData; query: string; s
           <aside className="catalog-note"><Icon name="globe" /><p>{page.copy.catalog.usFallbackNote}</p></aside>
         )}
         <div className="directory-toolbar">
-          <label className="directory-search">
-            <span className="sr-only">{page.copy.catalog.searchLabel}</span>
+          <div className="directory-search">
+            <label className="sr-only" htmlFor="directory-search">{page.copy.catalog.searchLabel}</label>
             <Icon name="search" />
             <input
               id="directory-search"
+              ref={searchInput}
               type="search"
               value={query}
               onChange={(event) => changeQuery(event.target.value)}
               placeholder={page.copy.hero.searchPlaceholder}
               autoComplete="off"
             />
-            {query && <button type="button" onClick={() => changeQuery('')} aria-label={page.copy.catalog.clear}><Icon name="close" /></button>}
-          </label>
+            {query && <button type="button" onClick={() => { changeQuery(''); searchInput.current?.focus() }} aria-label={page.copy.catalog.clear}><Icon name="close" /></button>}
+          </div>
           <p role="status" aria-live="polite">
             {interpolate(
               filtered.length === 1 ? page.copy.catalog.resultSingular : page.copy.catalog.results,
@@ -415,6 +419,7 @@ function Product({ page }: { page: PageData }) {
           <p className="product-plan-note">{page.experience.planNote}</p>
         </div>
         <div className="product-visual" aria-hidden="true">
+          <p className="illustration-label">{page.experience.demoLabel}</p>
           <div className="visual-window-bar"><span /><span /><span /><em>dashboard.sslping.io</em></div>
           <div className="visual-title"><p><small>HTTP(S)</small><strong>api.example.com</strong></p><span><i />200 OK</span></div>
           <div className="visual-metrics"><p><small>SLA</small><strong>99.99%</strong></p><p><small>RTT</small><strong>184 ms</strong></p><p><small>TLS</small><strong>84d</strong></p></div>
@@ -453,8 +458,8 @@ function Footer({ page }: { page: PageData }) {
           <a href="#directory">{page.copy.footer.directory}</a>
           <a href="#how-it-works">{page.copy.footer.how}</a>
           <a href="#regions">{page.copy.footer.regions}</a>
-          <a href="mailto:privacy@sslping.io">{page.copy.footer.privacy}</a>
-          <a href="mailto:legal@sslping.io">{page.copy.footer.terms}</a>
+          <a href="/privacy">{page.copy.footer.privacy}</a>
+          <a href="/terms">{page.copy.footer.terms}</a>
         </nav>
       </div>
       <div className="container footer-bottom">

@@ -11,3 +11,9 @@ export function render(regionCode: string) {
   const page = getPageData(regionCode)
   return { html: renderToString(<App page={page} />), page }
 }
+
+export { legalPath } from './LegalPage'
+import { LegalPage, legalDocument, type LegalKind, type LegalLanguage } from './LegalPage'
+export function renderLegal(kind: LegalKind, language: LegalLanguage) {
+  return { html: renderToString(<LegalPage kind={kind} language={language} />), page: legalDocument(kind, language) }
+}

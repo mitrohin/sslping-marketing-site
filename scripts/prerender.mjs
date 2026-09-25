@@ -83,3 +83,24 @@ for (const { html, page } of pages) {
   await writeFile(destination, renderDocument(page, html, serverEntry.encodePage(page), regionalPayloads))
   await writeFile(resolve(distDirectory, 'sitemaps', `${regionCode.toLowerCase()}.xml`), renderSitemap(page))
 }
+
+// These read-only documents need no client bootstrap: they remain usable with JavaScript disabled.
+for (const language of ['en', 'ru']) {
+  for (const kind of ['privacy', 'terms']) {
+    const { page, html } = serverEntry.renderLegal(kind, language)
+    const document = template
+      .replace('<html lang="en" dir="ltr" data-region="GLOBAL">', `<html lang="${language}" dir="ltr">`)
+      .replace('    <!--app-head-->', renderHead(page))
+      .replace('<title>SSLPing Public Status Directory</title>', `<title>${escapeAttribute(page.title)}</title>`)
+      .replace('<!--app-html-->', html)
+      .replace(/\s*<script\b[^>]*type="module"[^>]*>[\s\S]*?<\/script>/g, '')
+      .replace(/\s*<link\b[^>]*rel="modulepreload"[^>]*>/g, '')
+    const destination = resolve(distDirectory, serverEntry.legalPath(kind, language).slice(1), 'index.html')
+    await mkdir(resolve(destination, '..'), { recursive: true })
+    await writeFile(destination, document)
+  }
+}
+const globalSitemap = resolve(distDirectory, 'sitemaps', 'global.xml')
+const legalUrls = ['en', 'ru'].flatMap((language) => ['privacy', 'terms'].map((kind) =>
+  `  <url><loc>https://sslping.io${serverEntry.legalPath(kind, language)}</loc></url>`)).join('\n')
+await writeFile(globalSitemap, (await readFile(globalSitemap, 'utf8')).replace('</urlset>', `${legalUrls}\n</urlset>`))
