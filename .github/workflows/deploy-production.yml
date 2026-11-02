@@ -105,12 +105,28 @@ jobs:
         id: public_smoke
         run: node scripts/smoke-production.mjs
 
-      - name: Restore previous image after failed rollout or smoke
-        if: failure() && (steps.deploy.outcome == 'failure' || steps.public_smoke.outcome == 'failure') && env.PREVIOUS_MARKETING_IMAGE != ''
+      - name: Verify running release and save receipt
+        id: runtime_gate
+        run: node deploy/verify-deployed-release.mjs "${IMAGE_NAME}" "${DEPLOY_IMAGE}" "${GITHUB_SHA}" "${RUNNER_TEMP}/frontend-release.json"
+
+      - name: Restore previous image after failed rollout, smoke, or runtime verification
+        if: failure() && (steps.deploy.outcome == 'failure' || steps.public_smoke.outcome == 'failure' || steps.runtime_gate.outcome == 'failure') && env.PREVIOUS_MARKETING_IMAGE != ''
         env:
           PREVIOUS_IMAGE: ${{ env.PREVIOUS_MARKETING_IMAGE }}
         run: |
           set -euo pipefail
-          kubectl -n sslping set image deployment/sslping-marketing-site marketing-site="${PREVIOUS_IMAGE}"
-          kubectl -n sslping rollout status deployment/sslping-marketing-site --timeout=5m
+          rollback_context="$(timeout 10s kubectl config current-context)"
+          rollback_endpoint="$(timeout 10s kubectl config view --context "${rollback_context}" --minify -o jsonpath='{.clusters[0].cluster.server}')"
+          test "${rollback_endpoint}" = "https://${CLUSTER_ID}.k8s.ondigitalocean.com"
+          kubectl --context "${rollback_context}" --request-timeout=30s -n sslping set image deployment/sslping-marketing-site marketing-site="${PREVIOUS_IMAGE}"
+          kubectl --context "${rollback_context}" -n sslping rollout status deployment/sslping-marketing-site --timeout=5m
           echo "Previous image restored. The release remains failed; review route changes separately."
+
+      - name: Upload verified release receipt
+        if: success() && steps.runtime_gate.outcome == 'success'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: marketing-release-${{ github.sha }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/frontend-release.json
+          if-no-files-found: error
+          retention-days: 90

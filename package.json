@@ -15,7 +15,7 @@
     "logos:refresh": "node scripts/sync-service-logos.mjs --refresh-official",
     "logos:check": "node scripts/sync-service-logos.mjs --check",
     "test": "node --test scripts/production.test.mjs",
-    "test:security": "node --test deploy/select-deployed-image.node-test.mjs"
+    "test:security": "node --test deploy/select-deployed-image.node-test.mjs deploy/verify-deployed-release.node-test.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",
