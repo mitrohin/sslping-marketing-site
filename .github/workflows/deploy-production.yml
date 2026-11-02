@@ -42,6 +42,7 @@ jobs:
         run: |
           set -euo pipefail
           npm ci
+          npm run test:security
           npm run check
           npm run build
           npm test
