@@ -36,3 +36,6 @@ jobs:
           npm audit --audit-level=high
       - name: Build production image
         run: docker build --pull --build-arg VITE_DASHBOARD_URL=https://dashboard.sslping.io --tag sslping-marketing:ci .
+
+      - name: Verify patched nginx runtime and ordinary application traffic
+        run: node deploy/verify-nginx-runtime.mjs sslping-marketing:ci
